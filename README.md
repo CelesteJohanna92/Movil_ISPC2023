@@ -1,3 +1,5 @@
+<img src = "https://github.com/viktoryia40/programador2022/blob/desarrolladViktoryia/20230830_200809_0000.png?raw=true" width="200" height="200" />
+
 # Coctelis - Tu Recetario de Cócteles y Tragos
 ¡Bienvenido/a al repositorio de Coctelis! Aquí encontrarás todo lo relacionado con el desarrollo de nuestra aplicación móvil que te permite explorar, guardar y compartir recetas de tragos y cócteles.
 
