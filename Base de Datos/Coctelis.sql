@@ -16,3 +16,16 @@ create table if not exists categoria (
     nombre varchar(100) not null,
     primary key (id)
 );
+
+create table if not exists recetas (
+    id int not null auto_increment,
+    id_categoria int not null,
+    nombre varchar(100) not null,
+    origen varchar(100) not null,
+    tipo varchar(100) not null,
+    ingredientes varchar(100) not null,
+    imagen varchar(100) not null,
+    receta varchar(1000) not null,
+    primary key (id),
+    foreign key (id_categoria) references categoria(id)
+);
