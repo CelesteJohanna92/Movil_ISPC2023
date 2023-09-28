@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:text="@string/app_name"
         android:textColor="#fff"
-        android:fontFamily="@font/font_resources"
+        android:fontFamily="@font/coctelis"
         android:textSize="40dp"
         android:layout_marginBottom="15dp"
         android:gravity="center"

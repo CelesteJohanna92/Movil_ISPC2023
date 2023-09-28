@@ -4,11 +4,14 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="desarrollador"> Desarrollado por: OptimusWeb</string>
 
-    <string name="Inicio">Inicio</string>
-    <string name="Buscar">Buscar</string>
+    <string name="Inicio_Sesion">Inicio sesión</string>
+    <string name="Home">Home</string>
+    <string name="Categorias">Categorías</string>
+    <string name="Subir_Receta">Subir recetas</string>
     <string name="Perfil">Perfil</string>
     <string name="Sobre_nosotros">Sobre nosotros</string>
-    <string name="Cerrar_sesion">Cerrar Sesión</string>
+    <string name="Contacto">Contacto</string>
+    <string name="Cerrar_sesion">Cerrar sesión</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
