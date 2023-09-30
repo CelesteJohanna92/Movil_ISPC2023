@@ -45,4 +45,9 @@
     <string name="Correo">Correo</string>
     <string name="Contrasena">Contraseña</string>
     <string name="Atras">Atrás</string>
+
+    <!--contacto-->
+    <string name="Instagram">Instagram: @Coctelis</string>
+    <string name="Facebook"> Facebook: Coctelis</string>
+    <string name="Email">Email: coctelis@mail.com</string>
 </resources>
