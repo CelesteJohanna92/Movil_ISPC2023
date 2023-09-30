@@ -39,7 +39,7 @@
         android:layout_gravity="start"
         app:headerLayout="@layout/encabezado"
         app:menu="@menu/menu"
-        android:background="#BBAAB8">
+        android:background="#fff">
 
     </com.google.android.material.navigation.NavigationView>
 

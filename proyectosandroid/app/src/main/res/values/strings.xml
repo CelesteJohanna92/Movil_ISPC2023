@@ -4,7 +4,7 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="desarrollador"> Desarrollado por: OptimusWeb</string>
 
-    <string name="Inicio_Sesion">Inicio sesión</string>
+    <string name="Login_signup">Login/sign up</string>
     <string name="Home">Home</string>
     <string name="Categorias">Categorías</string>
     <string name="Subir_Receta">Subir recetas</string>
@@ -19,8 +19,8 @@
     <string name="Pina">Piña Colada</string>
     <string name="Margarita">Margarita</string>
 
-<!--PERFIL-->
-    <string name= "PERFILTXT">MI PERFIL</string>
+    <!--PERFIL-->
+    <string name="PERFILTXT">MI PERFIL</string>
     <string name="MIINFORMACIONTXT">MI INFORMACIÓN</string>
     <string name="UIDPERFILTXT">Uid:</string>
     <string name="UIDPERFIL"> -- </string>
@@ -34,4 +34,15 @@
     <string name="CONTRASENAPERFIL"> -- </string>
     <string name="ACTUALIZARCONTRASENA">ACTUALIZAR CONTRASEÑA</string>
     <string name="ACTUALIZARDATOS">ACTUALIZAR DATOS</string>
+
+    <!--login_registro-->
+    <string name="Acceder">Acceder</string>
+    <string name="Registrarse">Registrarse</string>
+
+    <!--inicio_sesion-->
+    <string name="Login">Inicio de Sesión</string>
+    <string name="Ingresar">Ingresar</string>
+    <string name="Correo">Correo</string>
+    <string name="Contrasena">Contraseña</string>
+    <string name="Atras">Atrás</string>
 </resources>

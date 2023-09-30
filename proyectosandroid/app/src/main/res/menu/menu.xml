@@ -7,8 +7,8 @@
         android:checkableBehavior="single">
 
         <item
-            android:id="@+id/Inicio_Sesion"
-            android:title="@string/Inicio_Sesion"
+            android:id="@+id/Login_signup"
+            android:title="@string/Login_signup"
             android:icon="@drawable/inicio_sesion">
         </item>
 

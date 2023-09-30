@@ -14,7 +14,7 @@ import android.widget.Toast;
 import com.example.asd.FragmentosAdmin.Categorias;
 import com.example.asd.FragmentosAdmin.Contacto;
 import com.example.asd.FragmentosAdmin.Home;
-import com.example.asd.FragmentosAdmin.Inicio_Sesion;
+import com.example.asd.FragmentosAdmin.Login_registro;
 import com.example.asd.FragmentosAdmin.Perfil;
 import com.example.asd.FragmentosAdmin.Sobre_nosotros;
 import com.example.asd.FragmentosAdmin.Subir_Receta;
@@ -49,23 +49,22 @@ public class MainActivityAdmin extends AppCompatActivity implements NavigationVi
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int itemId = item.getItemId();
 
-        if (itemId == R.id.Inicio_Sesion) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containerA, new Inicio_Sesion()).commit();
-        } else if (itemId == R.id.Home) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containerA, new Home()).commit();
-        } else if (itemId == R.id.Categorias) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containerA, new Categorias()).commit();
-        } else if (itemId == R.id.Subir_Receta) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containerA, new Subir_Receta()).commit();
-        } else if (itemId == R.id.Perfil) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containerA, new Perfil()).commit();
-        } else if (itemId == R.id.Sobre_nosotros) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containerA, new Sobre_nosotros()).commit();
-        } else if (itemId == R.id.Contacto) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containerA, new Contacto()).commit();
-        } else if (itemId == R.id.Cerrar_sesion) {
-            Toast.makeText(this, "Has cerrado sesión", Toast.LENGTH_SHORT).show();
-        }
+        if (itemId == R.id.Login_signup) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containerA, new Login_registro()).commit();}
+        else if (itemId == R.id.Home) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containerA, new Home()).commit();}
+        else if (itemId == R.id.Categorias) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containerA, new Categorias()).commit();}
+        else if (itemId == R.id.Subir_Receta) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containerA, new Subir_Receta()).commit();}
+        else if (itemId == R.id.Perfil) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containerA, new Perfil()).commit();}
+        else if (itemId == R.id.Sobre_nosotros) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containerA, new Sobre_nosotros()).commit();}
+        else if (itemId == R.id.Contacto) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containerA, new Contacto()).commit();}
+        else if (itemId == R.id.Cerrar_sesion) {
+            Toast.makeText(this, "Has cerrado sesión", Toast.LENGTH_SHORT).show();}
 
 
         drawerLayout.closeDrawer(GravityCompat.START);

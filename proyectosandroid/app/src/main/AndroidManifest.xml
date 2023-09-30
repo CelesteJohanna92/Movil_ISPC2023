@@ -13,9 +13,13 @@
         android:theme="@style/Theme.Asd"
         tools:targetApi="31">
         <activity
+            android:name=".Inicio_sesion"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
             android:name=".MainActivityAdmin"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Carga"
             android:exported="true">
