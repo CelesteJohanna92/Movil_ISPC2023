@@ -18,4 +18,20 @@
     <string name="Daiquiri">Daiquirí</string>
     <string name="Pina">Piña Colada</string>
     <string name="Margarita">Margarita</string>
+
+<!--PERFIL-->
+    <string name= "PERFILTXT">MI PERFIL</string>
+    <string name="MIINFORMACIONTXT">MI INFORMACIÓN</string>
+    <string name="UIDPERFILTXT">Uid:</string>
+    <string name="UIDPERFIL"> -- </string>
+    <string name="NOMBRESPERFILTXT">Nombre: </string>
+    <string name="NOMBRESPERFIl"> -- </string>
+    <string name="APELLIDOSPERFILTXT">Apellido: </string>
+    <string name="APELLIDOSPERFIl"> -- </string>
+    <string name="CORREOPERFILTXT">Correo: </string>
+    <string name="CORREOPERFIl"> -- </string>
+    <string name="CONTRASENAPERFILTXT">Contraseña: </string>
+    <string name="CONTRASENAPERFIL"> -- </string>
+    <string name="ACTUALIZARCONTRASENA">ACTUALIZAR CONTRASEÑA</string>
+    <string name="ACTUALIZARDATOS">ACTUALIZAR DATOS</string>
 </resources>
