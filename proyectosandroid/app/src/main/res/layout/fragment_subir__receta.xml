@@ -6,11 +6,90 @@
     tools:context=".FragmentosAdmin.Subir_Receta">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarB"
+        android:background="#131f30"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light">-->
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Subir recetas"
+        android:orientation="vertical"
         android:gravity="center"
-        android:textSize="40sp" />
+        android:padding="30dp">
+
+        <!--texto-->
+        <TextView
+
+            android:text="@string/SubirReceta"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="200dp"/>
+
+
+        <!--NOMBRE RECETA-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/NombreReceta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/NombreReceta"
+                android:inputType="textCapWords|textAutoComplete" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--INGREDIENTES-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/Ingrediente"
+                android:hint="@string/Ingredientes"
+                android:inputType="textCapWords|textAutoComplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <!--Imagen-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/imagen"
+                android:hint="Agregar Imagen"
+                android:layout_marginTop="20dp"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--botón-->
+        <Button
+            android:id="@+id/SubirRecetas"
+            android:text="@string/AGREGAR"
+            android:background="#131f30"
+            android:textColor="#ffffff"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
 
 </FrameLayout>

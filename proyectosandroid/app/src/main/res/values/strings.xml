@@ -67,4 +67,14 @@
     <string name="Coctelca">Cócteles Con Alcohol</string>
     <string name="Colctelsa">Cócteles Sin Alcohol</string>
 
+    <!--Subir_Receta-->
+
+    <string name="SubirReceta">Subir Receta</string>
+    <string name="AGREGAR">AGREGAR</string>
+    <string name="NombreReceta">Nombre</string>
+    <string name="Nombrereceta">Nombre</string>
+    <string name="Ingrediente">Ingrediente</string>
+    <string name="Ingredientes">Ingredientes</string>
+    <string name="Imagen">Agregar Imagen</string>
+
 </resources>
