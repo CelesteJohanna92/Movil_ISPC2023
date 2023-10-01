@@ -50,4 +50,14 @@
     <string name="Instagram">Instagram: @Coctelis</string>
     <string name="Facebook"> Facebook: Coctelis</string>
     <string name="Email">Email: coctelis@mail.com</string>
+
+    <!--registro-->
+
+    <string name="RegistroTXT">Registro</string>
+    <string name="CorreoR">Correo electrónico</string>
+    <string name="Password">Correo electronico</string>
+    <string name="Nombre">Nombre</string>
+    <string name="Apellido">Apellido</string>
+    <string name="Registrar">Registrar</string>
+
 </resources>
