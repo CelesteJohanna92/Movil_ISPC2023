@@ -60,4 +60,11 @@
     <string name="Apellido">Apellido</string>
     <string name="Registrar">Registrar</string>
 
+    <!--Categorías-->
+
+    <string name="CoctelCA">Coc con</string>
+    <string name="ColctelSA">Coc sin</string>
+    <string name="Coctelca">Cócteles Con Alcohol</string>
+    <string name="Colctelsa">Cócteles Sin Alcohol</string>
+
 </resources>
