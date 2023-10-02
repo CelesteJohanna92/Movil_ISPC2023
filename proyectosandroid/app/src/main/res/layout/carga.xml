@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#131f30"
+    tools:context=".Carga">
+
+   <androidx.appcompat.widget.LinearLayoutCompat
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:gravity="center"
+       android:orientation="vertical">
+
+      <androidx.appcompat.widget.AppCompatImageView
+          android:layout_width="300dp"
+          android:layout_height="300dp"
+          android:src="@drawable/carga" />
+      <com.airbnb.lottie.LottieAnimationView
+          android:layout_width="match_parent"
+          android:layout_height="150dp"
+          android:layout_marginTop="10dp"
+          android:layout_gravity="center"
+          app:lottie_imageAssetsFolder="assets"
+          app:lottie_fileName="carga_animacion.json"
+          app:lottie_loop="true"
+          app:lottie_autoPlay="true"/>
+
+   </androidx.appcompat.widget.LinearLayoutCompat>
+
+   <androidx.appcompat.widget.LinearLayoutCompat
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:gravity="bottom|center_horizontal"
+       android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/desarrollador"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="@string/desarrollador"
+          android:textColor="#fff"
+          android:layout_marginBottom="10dp"
+          android:textSize="18sp" />
+      <com.airbnb.lottie.LottieAnimationView
+          android:layout_width="match_parent"
+          android:layout_height="150dp"
+          android:layout_marginTop="10dp"
+          android:layout_gravity="center"
+          app:lottie_imageAssetsFolder="assets"
+          app:lottie_loop="true"
+          app:lottie_autoPlay="true"/>
+   </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>
+
+
+
+

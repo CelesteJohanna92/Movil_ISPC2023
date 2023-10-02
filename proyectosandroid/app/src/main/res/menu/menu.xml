@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/Login_signup"
+            android:title="@string/Login_signup"
+            android:icon="@drawable/inicio_sesion">
+        </item>
+
+        <item
+            android:id="@+id/Home"
+            android:title="@string/Home"
+            android:icon="@drawable/hogar">
+        </item>
+
+        <item
+            android:id="@+id/Categorias"
+            android:title="@string/Categorias"
+            android:icon="@drawable/buscar">
+        </item>
+
+        <item
+            android:id="@+id/Subir_Receta"
+            android:title="@string/Subir_Receta"
+            android:icon="@drawable/subir_receta">
+        </item>
+
+        <item
+            android:id="@+id/Perfil"
+            android:title="@string/Perfil"
+            android:icon="@drawable/usuario">
+        </item>
+
+        <item
+            android:id="@+id/Sobre_nosotros"
+            android:title="@string/Sobre_nosotros"
+            android:icon="@drawable/sobre_nosotros">
+        </item>
+
+        <item
+            android:id="@+id/Contacto"
+            android:title="@string/Contacto"
+            android:icon="@drawable/contacto">
+        </item>
+
+        <item
+            android:id="@+id/Cerrar_sesion"
+            android:title="@string/Cerrar_sesion"
+            android:icon="@drawable/salir">
+        </item>
+
+    </group>
+
+</menu>
