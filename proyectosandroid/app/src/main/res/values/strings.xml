@@ -77,4 +77,19 @@
     <string name="Ingredientes">Ingredientes</string>
     <string name="Imagen">Agregar Imagen</string>
 
+    <!---Sobre nosotros-->
+    <string name="OptimusWeb">OptimusWeb</string>
+    <string name="TextoSobreNostoros">
+    <![CDATA[
+    Somos una empreesa de desarrollo de software.\n\n
+    Nuestro equipo de trabajo se encuentra en constante actualización y formación para brindar un servicio de calidad a nuestros clientes.\n\n
+
+    Nuestro objetivo es mantener una relación activa con el cliente y que se extienda a través de los años. De nuestra parte nos comprometemos a realizar nuestro trabajo con compromiso y dedicación para que estén satisfechos con el servicio contratado.\n\n
+
+    Creamos soluciones de software que se adaptan a las necesidades de cada cliente, acompañándolos a llevar adelante la revolución digital que hoy nos moviliza. Brindamos soporte técnico especializado para garantizar que la actividad nunca se detenga.\n\n
+
+    Nuestro equipo trabaja en relación conjunta con cada cliente, asegurando el éxito de los proyectos. La cercanía con el cliente es nuestro valor diferencial en el mercado del software.
+    ]]>
+    </string>
+
 </resources>

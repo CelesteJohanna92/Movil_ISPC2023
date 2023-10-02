@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af0e4ef4-5d5e-49ea-b7d9-7b6be6e0a56f" name="Changes" comment="" />
+    <list default="true" id="af0e4ef4-5d5e-49ea-b7d9-7b6be6e0a56f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyectosandroid/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/proyectosandroid/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyectosandroid/app/src/main/res/layout/fragment_sobre_nosotros.xml" beforeDir="false" afterPath="$PROJECT_DIR$/proyectosandroid/app/src/main/res/layout/fragment_sobre_nosotros.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyectosandroid/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/proyectosandroid/app/src/main/res/values/strings.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,7 +32,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/cmc_8/AndroidStudioProjects/Movil_ISPC2023/proyectosandroid"
+    "last_opened_file_path": "C:/Users/ozare/OneDrive/Рабочий стол/Новая папка/Movil_ISPC2023"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
