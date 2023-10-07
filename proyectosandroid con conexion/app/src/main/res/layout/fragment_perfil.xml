@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dfe1e3"
+    tools:context=".FragmentosAdmin.Perfil">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+        
+        <TextView
+            android:text="@string/PERFILTXT"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#131f30"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/usuario"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#776483"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:text="@string/MIINFORMACIONTXT"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#131f30"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <!--UID-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/UIDPERFILTXT"
+                android:text="@string/UIDPERFILTXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/UIDPERFIL"
+            android:text="@string/UIDPERFIL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textSize="20sp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <!--NOMBRES-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/NOMBRESPERFILTXT"
+                android:text="@string/NOMBRESPERFILTXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/NOMBRESPERFIl"
+                android:text="@string/NOMBRESPERFIl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textSize="20sp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <!--APELLIDOS-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/APELLIDOSPERFILTXT"
+                android:text="@string/APELLIDOSPERFILTXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/APELLIDOSPERFIL"
+                android:text="@string/APELLIDOSPERFIl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textSize="20sp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <!--CORREO-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/CORREOPERFILTXT"
+                android:text="@string/CORREOPERFILTXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/CORREOPERFIL"
+                android:text="@string/CORREOPERFIl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textSize="20sp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <!--CONTRASENA-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/CONTRASENAPERFILTXT"
+                android:text="@string/CONTRASENAPERFILTXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/CONTRASENAPERFIL"
+                android:text="@string/CONTRASENAPERFIL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textSize="20sp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#776483"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/ACTUALIZARCONTRASENA"
+            android:text="@string/ACTUALIZARCONTRASENA"
+            android:textColor="#fff"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_action_edit"
+            android:background="@drawable/btn_personalizado_dos"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:drawablePadding="15dp"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/ACTUALIZARDATOS"
+            android:text="@string/ACTUALIZARDATOS"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_action_edit"
+            android:background="@drawable/btn_personalizado"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:drawablePadding="15dp"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    
+
+
+</FrameLayout>
