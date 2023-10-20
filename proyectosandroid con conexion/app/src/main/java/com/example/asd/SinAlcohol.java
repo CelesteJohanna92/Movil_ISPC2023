@@ -1,4 +1,4 @@
-package com.example.asd.FragmentosAdmin;
+package com.example.asd;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;

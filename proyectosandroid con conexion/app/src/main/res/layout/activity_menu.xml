@@ -7,14 +7,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".MainActivityAdmin"
+    tools:context=".MainActivity"
     tools:openDrawer="start">
-    
+
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        
+
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbarA"
             android:background="#131f30"
@@ -41,8 +41,6 @@
         app:menu="@menu/menu"
         android:background="#fff">
 
-
     </com.google.android.material.navigation.NavigationView>
-
 
 </androidx.drawerlayout.widget.DrawerLayout>

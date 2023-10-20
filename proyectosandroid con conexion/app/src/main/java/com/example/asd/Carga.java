@@ -11,17 +11,20 @@ public class Carga extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.carga);
+        setContentView(R.layout.activity_carga);
 
         final int DURACION = 3000;
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(Carga.this, MainActivityAdmin.class);
+                Intent intent = new Intent(Carga.this, menu.class);
                 startActivity(intent);
                 finish();
             }
         },DURACION);
+
+
+
     }
 }

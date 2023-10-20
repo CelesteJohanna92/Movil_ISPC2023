@@ -10,26 +10,40 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Asd"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
-        <activity
-            android:name=".FragmentosAdmin.SinAlcohol"
-            android:exported="false" />
-        <activity
-            android:name=".Registro"
-            android:exported="false"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Inicio_sesion"
-            android:exported="false"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".MainActivityAdmin"
-            android:exported="false"
-            android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".Carga"
-            android:exported="true">
+            android:exported="false" />
+        <activity
+            android:name=".Fragmentos.Home"
+            android:exported="false" />
+        <activity
+            android:name=".Fragmentos.Categorias"
+            android:exported="false" />
+        <activity
+            android:name=".Fragmentos.Buscar"
+            android:exported="false" />
+        <activity
+            android:name=".menu"
+            android:exported="false" />
+        <activity
+            android:name=".Inicio"
+            android:exported="false" />
+        <activity
+            android:name=".Mostrar"
+            android:exported="false" />
+        <activity
+            android:name=".Editar"
+            android:exported="false" />
+        <activity
+            android:name=".Registrar"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

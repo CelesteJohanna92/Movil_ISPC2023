@@ -1,4 +1,4 @@
-package com.example.asd.FragmentosAdmin;
+package com.example.asd.Fragmentos;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,28 +10,26 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.asd.Inicio;
 import com.example.asd.R;
 
-public class Categorias extends Fragment {
+public class Perfil extends Fragment {
 
-    Button ColctelSA;
+    Button Editar;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_categorias, container, false);
+        View view = inflater.inflate(R.layout.fragment_perfil, container, false);
 
+        Editar = view.findViewById(R.id.Editar);
 
-        ColctelSA = view.findViewById(R.id.ColctelSA);
-
-        ColctelSA.setOnClickListener(new View.OnClickListener() {
+        Editar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getActivity(), SinAlcohol.class));
+                startActivity(new Intent(getActivity(), Inicio.class));
             }
         });
-
         return view;
     }
 }

@@ -3,8 +3,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="desarrollador"> Desarrollado por: OptimusWeb</string>
-
-    <string name="Login_signup">Login/sign up</string>
+    
     <string name="Home">Home</string>
     <string name="Categorias">Categorías</string>
     <string name="Subir_Receta">Subir recetas</string>
@@ -58,7 +57,7 @@
     <string name="Password">Correo electronico</string>
     <string name="Nombre">Nombre</string>
     <string name="Apellido">Apellido</string>
-    <string name="btnRegistrar">Registrar</string>
+    <string name="Registrar">Registrar</string>
 
     <!--Categorías-->
 
@@ -91,5 +90,7 @@
     Nuestro equipo trabaja en relación conjunta con cada cliente, asegurando el éxito de los proyectos. La cercanía con el cliente es nuestro valor diferencial en el mercado del software.
     ]]>
     </string>
+
+    <string name="EDITAR">EDITAR</string>
 
 </resources>
