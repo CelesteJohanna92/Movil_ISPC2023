@@ -21,11 +21,10 @@ import java.text.BreakIterator;
 public class Inicio extends AppCompatActivity implements View.OnClickListener {
 
     TextView nombre;
-    Button btnEditar,btnEliminar,btnMostrar,btnSalir;
+    Button btnEditar,btnEliminar,btnSalir;
     int id =0;
     Usuario u;
     daoUsuario dao;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,11 +34,9 @@ public class Inicio extends AppCompatActivity implements View.OnClickListener {
         nombre = (TextView) findViewById(R.id.nombreUsuario);
         btnEditar = (Button) findViewById(R.id.btnEditar);
         btnEliminar = (Button) findViewById(R.id.btnEliminar);
-        btnMostrar = (Button) findViewById(R.id.btnMostrar);
         btnSalir = (Button) findViewById(R.id.btnSalir);
         btnEditar.setOnClickListener(this);
         btnEliminar.setOnClickListener(this);
-        btnMostrar.setOnClickListener(this);
         btnSalir.setOnClickListener(this);
 
         Bundle b = getIntent().getExtras();
@@ -79,15 +76,10 @@ public class Inicio extends AppCompatActivity implements View.OnClickListener {
                 }
             });
             b.show();
-        } else if (v.getId() == R.id.btnMostrar) {
-            Intent c = new Intent(Inicio.this, Mostrar.class);
-            startActivity(c);
         } else if (v.getId() == R.id.btnSalir) {
             Intent i2 = new Intent(Inicio.this, Carga.class);
             startActivity(i2);
         }
-
-
         if (v.getId() == R.id.btnEdiActualizar) {
 
             BreakIterator ediUser = null;
@@ -99,6 +91,7 @@ public class Inicio extends AppCompatActivity implements View.OnClickListener {
             u.setPassword(ediPass.getText().toString());
             u.setNombre(ediNombre.getText().toString());
             u.setApellido(ediApellido.getText().toString());
+
 
             if (!u.isNull()) {
                 Toast.makeText(this, "Error: campos vacios", Toast.LENGTH_SHORT).show();
