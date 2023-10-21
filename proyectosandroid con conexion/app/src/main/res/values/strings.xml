@@ -66,15 +66,25 @@
     <string name="Coctelca">Cócteles Con Alcohol</string>
     <string name="Colctelsa">Cócteles Sin Alcohol</string>
 
+<!--spinner-->
+    <string-array name="opciones_categoria">
+        <item>Cócteles con alcohol</item>
+        <item>Cócteles sin alcohol</item>
+    </string-array>
+
+    <string name="selecciona_categoria">Selecciona una categoría</string>
+
+    <!--Subir_Receta-->
+
     <!--Subir_Receta-->
 
     <string name="SubirReceta">Subir Receta</string>
     <string name="AGREGAR">AGREGAR</string>
     <string name="NombreReceta">Nombre</string>
-    <string name="Nombrereceta">Nombre</string>
-    <string name="Ingrediente">Ingrediente</string>
-    <string name="Ingredientes">Ingredientes</string>
-    <string name="Imagen">Agregar Imagen</string>
+    <string name="Ingrediente">Ingredientes</string>
+    <string name="Descripción">Descripción</string>
+    <string name="Categoria">Categoria</string>
+    <string name="Imagen">Imagen</string>
 
     <!---Sobre nosotros-->
     <string name="OptimusWeb">OptimusWeb</string>

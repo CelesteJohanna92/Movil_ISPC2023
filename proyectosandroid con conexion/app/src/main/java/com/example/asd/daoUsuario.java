@@ -15,7 +15,8 @@ public class daoUsuario {
     SQLiteDatabase sql;
     String bd = "Coctelis.db";
     String tabla = "create table if not exists usuario(id integer primary key autoincrement, usuario text, password text, nombre text, apellido text, estado_sesion integer)";
-
+    String tablaReceta = "create table if not exists receta(id integer primary key autoincrement, id_categoria integer, id_usuario integer, nombre text, ingredientes text, instrucciones text, imagen blob, foreign key (id_categoria) references categoria(id), foreign key (id_usuario) references usuario(id))";
+    String tablaCategoria = "create table if not exists categoria(id integer primary key autoincrement, nombre text)";
     public daoUsuario(Context c){
         this.c=c;
         sql=c.openOrCreateDatabase(bd,c.MODE_PRIVATE, null);
@@ -112,5 +113,20 @@ public class daoUsuario {
     }
 
 
+    public void insertarReceta(int idCategoria, int idUsuario, String nombre, String ingredientes, String instrucciones, byte[] imagenBytes) {
+        ContentValues cv = new ContentValues();
+        cv.put("id_categoria", idCategoria);
+        cv.put("id_usuario", idUsuario);
+        cv.put("nombre", nombre);
+        cv.put("ingredientes", ingredientes);
+        cv.put("instrucciones", instrucciones);
+        cv.put("imagen", imagenBytes);
+        sql.insert("receta", null, cv);
+    }
+    public void close() {
+        if (sql != null) {
+            sql.close();
+        }
+    }
 }
 
