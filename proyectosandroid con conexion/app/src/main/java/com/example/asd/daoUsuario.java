@@ -14,7 +14,7 @@ public class daoUsuario {
     ArrayList<Usuario> lista;
     SQLiteDatabase sql;
     String bd = "Coctelis.db";
-    String tabla = "create table if not exists usuario(id integer primary key autoincrement, usuario text, password text, nombre text, apellido text)";
+    String tabla = "create table if not exists usuario(id integer primary key autoincrement, usuario text, password text, nombre text, apellido text, estado_sesion integer)";
 
     public daoUsuario(Context c){
         this.c=c;

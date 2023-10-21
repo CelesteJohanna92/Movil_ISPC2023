@@ -1,5 +1,6 @@
 package com.example.asd;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -64,11 +65,16 @@ public class menu extends AppCompatActivity implements NavigationView.OnNavigati
         else if (itemId == R.id.Contacto) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containerA, new Contacto()).commit();}
         else if (itemId == R.id.Cerrar_sesion) {
-            Toast.makeText(this, "Has cerrado sesión", Toast.LENGTH_SHORT).show();}
+            Toast.makeText(this, "Has cerrado sesión", Toast.LENGTH_SHORT).show();
+            // Redirigir al usuario a la actividad de inicio de sesión.
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
 
+            // Finalizar la actividad actual para cerrar la sesión.
+            finish();
+        }
 
         drawerLayout.closeDrawer(GravityCompat.START);
-
 
         return true;
     }
