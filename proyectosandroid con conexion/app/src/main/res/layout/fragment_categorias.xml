@@ -49,7 +49,7 @@
                 android:src="@drawable/con_alcohol" />
             <!--botón1-->
             <Button
-                android:id="@+id/CoctelCA"
+                android:id="@+id/btn_conAlcohol"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -74,7 +74,7 @@
                 android:src="@drawable/sin_alcohol" />
             <!--botón2-->
             <Button
-                android:id="@+id/ColctelSA"
+                android:id="@+id/btn_sinAlcohol"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"

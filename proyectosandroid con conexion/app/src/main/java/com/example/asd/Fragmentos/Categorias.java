@@ -26,8 +26,8 @@ public class Categorias extends Fragment {
         View view = inflater.inflate(R.layout.fragment_categorias, container, false);
 
 
-        ColctelSA = view.findViewById(R.id.ColctelSA);
-        CoctelCA = view.findViewById(R.id.CoctelCA);
+        ColctelSA = view.findViewById(R.id.btn_sinAlcohol);
+        CoctelCA = view.findViewById(R.id.btn_conAlcohol);
 
         ColctelSA.setOnClickListener(view1 -> startActivity(new Intent(getActivity(), SinAlcohol.class)));
 
