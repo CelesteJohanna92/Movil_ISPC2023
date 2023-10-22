@@ -12,10 +12,12 @@ import android.widget.Button;
 
 import com.example.asd.R;
 import com.example.asd.SinAlcohol;
+import com.example.asd.ConAlcohol;
 
 public class Categorias extends Fragment {
 
     Button ColctelSA;
+    Button CoctelCA;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -25,13 +27,11 @@ public class Categorias extends Fragment {
 
 
         ColctelSA = view.findViewById(R.id.ColctelSA);
+        CoctelCA = view.findViewById(R.id.CoctelCA);
 
-        ColctelSA.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getActivity(), SinAlcohol.class));
-            }
-        });
+        ColctelSA.setOnClickListener(view1 -> startActivity(new Intent(getActivity(), SinAlcohol.class)));
+
+        CoctelCA.setOnClickListener(view2 -> startActivity(new Intent(getActivity(), ConAlcohol.class)));
 
         return view;
     }

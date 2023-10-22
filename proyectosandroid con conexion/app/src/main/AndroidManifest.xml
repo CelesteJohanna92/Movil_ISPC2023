@@ -12,7 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
-
+        <activity
+            android:name=".ConAlcohol"
+            android:exported="false" />
+        <activity
+            android:name=".SinAlcohol"
+            android:exported="false" />
         <activity
             android:name=".Carga"
             android:exported="false" />

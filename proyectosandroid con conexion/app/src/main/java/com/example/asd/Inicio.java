@@ -16,6 +16,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.asd.Fragmentos.Home;
+
 import java.text.BreakIterator;
 
 public class Inicio extends AppCompatActivity implements View.OnClickListener {
@@ -40,10 +42,14 @@ public class Inicio extends AppCompatActivity implements View.OnClickListener {
         btnSalir.setOnClickListener(this);
 
         Bundle b = getIntent().getExtras();
-        id = b.getInt("id");
-        dao = new daoUsuario(this);
-        u = dao.getUsuarioById(id);
-        nombre.setText(u.getNombre() + " " + u.getApellido());
+        if (b != null) {
+            id = b.getInt("id");
+            dao = new daoUsuario(this);
+            u = dao.getUsuarioById(id);
+            nombre.setText(u.getNombre() + " " + u.getApellido());
+        } else {
+            Toast.makeText(this, "error", Toast.LENGTH_SHORT).show();
+        }
     }
 
     @Override
@@ -77,7 +83,7 @@ public class Inicio extends AppCompatActivity implements View.OnClickListener {
             });
             b.show();
         } else if (v.getId() == R.id.btnSalir) {
-            Intent i2 = new Intent(Inicio.this, Carga.class);
+            Intent i2 = new Intent(Inicio.this, Home.class);
             startActivity(i2);
         }
         if (v.getId() == R.id.btnEdiActualizar) {

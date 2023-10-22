@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             } else if (dao.login(u, p) == 1) {
                 Usuario ux = dao.getUsuario(u, p);
                 Toast.makeText(this, "Datos correctos", Toast.LENGTH_SHORT).show();
-                Intent i2 = new Intent(MainActivity.this, Inicio.class);
+                Intent i2 = new Intent(MainActivity.this, Carga.class);
                 i2.putExtra("id", ux.getId());
                 startActivity(i2);
             } else {

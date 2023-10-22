@@ -9,8 +9,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.asd.Fragmentos.Perfil;
-
 public class Editar extends AppCompatActivity implements View.OnClickListener{
 
     EditText ediUser, ediPass, ediNombre, ediApellido;
@@ -72,7 +70,7 @@ public class Editar extends AppCompatActivity implements View.OnClickListener{
                 Toast.makeText(this, "No se puede actualizar!!", Toast.LENGTH_SHORT).show();
             }
         } else if (v.getId() == R.id.btnEdiCancelar) {
-            Intent i2 = new Intent(Editar.this, Perfil.class);
+            Intent i2 = new Intent(Editar.this, Inicio.class);
             i2.putExtra("id", u.getId());
             startActivity(i2);
             finish();

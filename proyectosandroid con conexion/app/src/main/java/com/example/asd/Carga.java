@@ -19,12 +19,16 @@ public class Carga extends AppCompatActivity {
             @Override
             public void run() {
                 Intent intent = new Intent(Carga.this, menu.class);
+
+
+                int userId = getIntent().getIntExtra("id", -1);
+
+
+                intent.putExtra("id", userId);
+
                 startActivity(intent);
                 finish();
             }
-        },DURACION);
-
-
-
+        }, DURACION);
     }
 }

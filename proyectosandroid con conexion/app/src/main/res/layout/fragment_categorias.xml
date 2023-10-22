@@ -50,10 +50,11 @@
             <!--botón1-->
             <Button
                 android:id="@+id/CoctelCA"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:background="#131f30"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/btn_personalizado_cuatro"
                 android:gravity="center"
                 android:text="@string/Coctelca"
                 android:textColor="#ffffff" />
@@ -74,11 +75,12 @@
             <!--botón2-->
             <Button
                 android:id="@+id/ColctelSA"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
                 android:layout_weight="1"
-                android:background="#131f30"
+                android:background="@drawable/btn_personalizado_cuatro"
                 android:text="@string/Colctelsa"
                 android:textColor="#ffffff" />
         </androidx.appcompat.widget.LinearLayoutCompat>

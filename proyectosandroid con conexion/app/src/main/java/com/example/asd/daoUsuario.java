@@ -21,6 +21,8 @@ public class daoUsuario {
         this.c=c;
         sql=c.openOrCreateDatabase(bd,c.MODE_PRIVATE, null);
         sql.execSQL(tabla);
+        sql.execSQL(tablaReceta);
+        sql.execSQL(tablaCategoria);
         u=new Usuario();
     }
     public boolean insertarUsuario(Usuario u){

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SinAlcohol">
+    tools:context=".ConAlcohol">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarB"
@@ -23,7 +23,7 @@
         android:background="@color/colorPrimary"
         android:gravity="center"
         android:paddingTop="50dp"
-        android:text="@string/Colctelsa"
+        android:text="@string/Coctelca"
         android:textColor="@color/cardview_light_background"
         android:textSize="35sp" />
 

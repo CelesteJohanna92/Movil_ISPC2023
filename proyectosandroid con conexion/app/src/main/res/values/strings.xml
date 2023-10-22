@@ -3,7 +3,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="desarrollador"> Desarrollado por: OptimusWeb</string>
-    
+
     <string name="Home">Home</string>
     <string name="Categorias">Categorías</string>
     <string name="Subir_Receta">Subir recetas</string>
@@ -66,7 +66,7 @@
     <string name="Coctelca">Cócteles Con Alcohol</string>
     <string name="Colctelsa">Cócteles Sin Alcohol</string>
 
-<!--spinner-->
+    <!--spinner-->
     <string-array name="opciones_categoria">
         <item>Cócteles con alcohol</item>
         <item>Cócteles sin alcohol</item>
