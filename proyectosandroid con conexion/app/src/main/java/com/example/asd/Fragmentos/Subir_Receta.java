@@ -122,6 +122,15 @@ public class Subir_Receta extends Fragment {
                 // Convierte la URI de la imagen a bytes
                 byte[] imagenBytes = convertirImagenBytes(Uri.parse(imagenPath));
                 agregarReceta(nombre, ingredientes, instrucciones, imagenBytes);
+                // Limpiar los campos después de subir la receta con éxito
+                limpiarCampos();
+            }
+            private void limpiarCampos() {
+                edtNombre.getText().clear();
+                edtIngredientes.getText().clear();
+                edtInstrucciones.getText().clear();
+                btnImagen.setImageURI(null);
+                spinnerCategoria.setSelection(0);
             }
         });
 
