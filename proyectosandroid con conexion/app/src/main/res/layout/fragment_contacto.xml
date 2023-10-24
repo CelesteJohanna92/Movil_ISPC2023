@@ -29,6 +29,7 @@
             android:textStyle="bold" />
 
         <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/instagramAnimation"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_gravity="center"
@@ -36,7 +37,9 @@
             app:lottie_autoPlay="true"
             app:lottie_fileName="instagram.json"
             app:lottie_imageAssetsFolder="assets"
+            android:clickable="true"
             app:lottie_loop="false"/>
+
 
         <TextView
             android:id="@+id/Instagram"
@@ -49,6 +52,7 @@
         </TextView>
 
         <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/facebookAnimation"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_gravity="center"
@@ -56,6 +60,7 @@
             app:lottie_autoPlay="true"
             app:lottie_fileName="facebook.json"
             app:lottie_imageAssetsFolder="assets"
+            android:clickable="true"
             app:lottie_loop="false" />
 
         <TextView
@@ -69,6 +74,7 @@
         </TextView>
 
         <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/correoAnimation"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_gravity="center"
@@ -76,6 +82,7 @@
             app:lottie_autoPlay="true"
             app:lottie_fileName="correo.json"
             app:lottie_imageAssetsFolder="assets"
+            android:clickable="true"
             app:lottie_loop="false" />
 
         <TextView

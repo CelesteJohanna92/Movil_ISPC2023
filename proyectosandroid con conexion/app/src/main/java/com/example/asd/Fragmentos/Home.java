@@ -3,12 +3,19 @@ package com.example.asd.Fragmentos;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.asd.R;
+import com.example.asd.Receta;
+import com.example.asd.RecetaAdapter;
+import com.example.asd.daoUsuario;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,6 +23,10 @@ import com.example.asd.R;
  * create an instance of this fragment.
  */
 public class Home extends Fragment {
+
+    private ArrayList<Receta> listaRecetas;
+    private daoUsuario dao;
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -58,9 +69,31 @@ public class Home extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
+
+        // Aquí puedes configurar la interfaz de usuario, pero no crees instancias de Receta ni RecyclerView
+
+        return view;
     }
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        daoUsuario dao = new daoUsuario(getContext());
+        listaRecetas = dao.selectRecetas();
+        dao.close();
+
+        // Configura el RecyclerView
+        RecyclerView recyclerView = view.findViewById(R.id.recyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+
+        // Crea un adaptador personalizado para el RecyclerView y configúralo
+        RecetaAdapter adapter = new RecetaAdapter(listaRecetas, getContext());
+        recyclerView.setAdapter(adapter);
+
+    }
+
+
 }

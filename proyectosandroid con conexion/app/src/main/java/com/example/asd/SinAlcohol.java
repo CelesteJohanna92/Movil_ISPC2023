@@ -5,8 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.asd.R;
-
 public class SinAlcohol extends AppCompatActivity {
 
     @Override
@@ -14,7 +12,17 @@ public class SinAlcohol extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sin_alcohol);
 
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setTitle("Cócteles sin alcohol");
+            actionBar.setDisplayShowHomeEnabled(true);
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
     }
 
-
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return super.onSupportNavigateUp();
+    }
 }

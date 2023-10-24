@@ -1,5 +1,7 @@
 package com.example.asd.Fragmentos;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -8,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.example.asd.R;
 
 /**
@@ -60,7 +63,42 @@ public class Contacto extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_contacto, container, false);
+        View view = inflater.inflate(R.layout.fragment_contacto, container, false);
+
+        LottieAnimationView instagramAnimation = view.findViewById(R.id.instagramAnimation);
+        LottieAnimationView facebookAnimation = view.findViewById(R.id.facebookAnimation);
+        LottieAnimationView correoAnimation = view.findViewById(R.id.correoAnimation);
+        instagramAnimation.setOnClickListener(v -> openInstagramPage());
+        facebookAnimation.setOnClickListener(v -> openFacebookPage());
+        correoAnimation.setOnClickListener(v -> openCorreoPage());
+
+        return view;
+    }
+
+    private void openInstagramPage() {
+        String instagramUsername = "Coctelis";
+        String url = "https://www.instagram.com/" + instagramUsername;
+        Uri uri = Uri.parse(url);
+
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
+    }
+
+    private void openFacebookPage() {
+        String facebookUsername = "Coctelis";
+        String url = "https://www.facebook.com/" + facebookUsername;
+        Uri uri = Uri.parse(url);
+
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
+    }
+
+    private void openCorreoPage() {
+        String correoUsername = "Coctelis@gmail.com";
+        String url = "https://www.google.com/intl/es-419/gmail/about/" + correoUsername;
+        Uri uri = Uri.parse(url);
+
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
     }
 }

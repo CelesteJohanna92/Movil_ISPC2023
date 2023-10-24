@@ -16,7 +16,6 @@ import com.example.asd.Fragmentos.Categorias;
 import com.example.asd.Fragmentos.Contacto;
 import com.example.asd.Fragmentos.Home;
 import com.example.asd.Fragmentos.Sobre_nosotros;
-import com.example.asd.Fragmentos.Subir_Receta;
 import com.google.android.material.navigation.NavigationView;
 
 public class menu extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -56,7 +55,17 @@ public class menu extends AppCompatActivity implements NavigationView.OnNavigati
         else if (itemId == R.id.Categorias) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containerA, new Categorias()).commit();}
         else if (itemId == R.id.Subir_Receta) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containerA, new Subir_Receta()).commit();}
+            // Obtén el ID del usuario actual, por ejemplo, desde una variable userId
+            int userId = obtenerIdDelUsuarioActual();
+
+            if (userId != -1) { // Asegúrate de manejar adecuadamente el caso en el que no se pueda obtener el ID
+                Intent intent = new Intent(this, SubirRecetas.class);
+                intent.putExtra("id", userId);
+                startActivity(intent);
+            } else {
+                // Manejar el caso en el que no se pudo obtener el ID del usuario
+                Toast.makeText(this, "No se pudo obtener el ID del usuario.", Toast.LENGTH_SHORT).show();
+            }}
         else if (itemId == R.id.Perfil) {
             // Obtén el ID del usuario actual, por ejemplo, desde una variable userId
         int userId = obtenerIdDelUsuarioActual();

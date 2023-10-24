@@ -12,8 +12,16 @@ public class ConAlcohol extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_con_alcohol);
 
-
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setTitle("Cócteles con alcohol");
+            actionBar.setDisplayShowHomeEnabled(true);
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
     }
-
-
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return super.onSupportNavigateUp();
+    }
 }

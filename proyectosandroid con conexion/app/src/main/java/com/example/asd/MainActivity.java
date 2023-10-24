@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button btnEntrar, btnRegistrar;
     daoUsuario dao;
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -32,7 +31,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnRegistrar.setOnClickListener((View.OnClickListener) this);
         dao = new daoUsuario(this);
 
+        // Llama a un método para insertar las categorías en la base de datos
+        insertarCategorias();
     }
+
+    private void insertarCategorias() {
+
+        dao.insertarCategoria("Con alcohol");
+        dao.insertarCategoria("Sin alcohol");
+    }
+
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.btnEntrar) {
