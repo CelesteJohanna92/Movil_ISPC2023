@@ -17,9 +17,11 @@
             android:exported="false" />
         <activity
             android:name=".ConAlcohol"
+            android:theme="@style/Theme.AppCompat"
             android:exported="false" />
         <activity
             android:name=".SinAlcohol"
+            android:theme="@style/Theme.AppCompat"
             android:exported="false" />
         <activity
             android:name=".Carga"

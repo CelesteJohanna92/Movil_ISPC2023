@@ -25,14 +25,20 @@ public class Categorias extends Fragment {
         ColctelSA = view.findViewById(R.id.ColctelSA);
         CoctelCA = view.findViewById(R.id.CoctelCA);
 
-        ColctelSA.setOnClickListener(view1 -> {
-            Intent intent = new Intent(getActivity(), SinAlcohol.class);
-            startActivity(intent);
+        ColctelSA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), SinAlcohol.class));
+
+            }
         });
 
-        CoctelCA.setOnClickListener(view1 -> {
-            Intent intent = new Intent(getActivity(), ConAlcohol.class);
-            startActivity(intent);
+
+        CoctelCA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), ConAlcohol.class));
+            }
         });
 
         return view;

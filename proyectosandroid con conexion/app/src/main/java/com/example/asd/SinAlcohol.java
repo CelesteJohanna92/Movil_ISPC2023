@@ -13,12 +13,12 @@ public class SinAlcohol extends AppCompatActivity {
         setContentView(R.layout.activity_sin_alcohol);
 
         ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null) {
-            actionBar.setTitle("Cócteles sin alcohol");
-            actionBar.setDisplayShowHomeEnabled(true);
-            actionBar.setDisplayHomeAsUpEnabled(true);
+        assert actionBar != null;
+        actionBar.setTitle("Categorias");
+        actionBar.setDisplayShowHomeEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(true);
         }
-    }
+
 
     @Override
     public boolean onSupportNavigateUp() {
