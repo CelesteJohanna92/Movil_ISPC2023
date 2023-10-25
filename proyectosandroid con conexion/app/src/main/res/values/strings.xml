@@ -86,6 +86,12 @@
     <string name="Categoria">Categoria</string>
     <string name="Imagen">Imagen</string>
 
+    <!--Items Receta-->
+
+    <string name="itemsImagenReceta">--</string>
+    <string name="itemTextImagen">--</string>
+    <string name="itemsDescriptionReceta">--</string>
+
     <!---Sobre nosotros-->
     <string name="OptimusWeb">OptimusWeb</string>
     <string name="TextoSobreNostoros">
