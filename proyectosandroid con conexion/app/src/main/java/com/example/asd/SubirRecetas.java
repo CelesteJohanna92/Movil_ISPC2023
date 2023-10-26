@@ -11,8 +11,11 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.Toast;
+import androidx.appcompat.widget.Toolbar;
+
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -43,7 +46,11 @@ public class SubirRecetas extends AppCompatActivity {
                 }
             }
     );
-
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return super.onSupportNavigateUp();
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,8 +61,20 @@ public class SubirRecetas extends AppCompatActivity {
             id = b.getInt("id");
 
         }
+        Toolbar toolbar = findViewById(R.id.toolbarB);
+        setSupportActionBar(toolbar);
 
-        dao = new daoUsuario(this);
+        ActionBar actionBar = getSupportActionBar();
+        assert actionBar != null;
+        actionBar.setTitle("Subir Recetas");
+        actionBar.setDisplayShowHomeEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
+
+
+
+
+    dao = new daoUsuario(this);
 
         List<String> categoriasList = dao.selectCategorias();
 

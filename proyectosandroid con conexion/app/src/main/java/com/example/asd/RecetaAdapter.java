@@ -56,13 +56,13 @@ public class RecetaAdapter extends RecyclerView.Adapter<RecetaAdapter.RecetaView
         public ImageView imagenImageView;
         public TextView nombreTextView;
 
-        public TextView descripcionReceta;
+
 
         public RecetaViewHolder(View view) {
             super(view);
             imagenImageView = view.findViewById(R.id.itemsImagenReceta);
             nombreTextView = view.findViewById(R.id.itemTextImagen);
-            descripcionReceta = view.findViewById(R.id.itemsDescriptionReceta);
+
         }
     }
 }
