@@ -90,7 +90,8 @@
 
     <string name="itemsImagenReceta">--</string>
     <string name="itemTextImagen">--</string>
-    <string name="itemsDescriptionReceta">--</string>
+    <string name="itenDescripcionReceta">--</string>
+
 
     <!---Sobre nosotros-->
     <string name="OptimusWeb">OptimusWeb</string>

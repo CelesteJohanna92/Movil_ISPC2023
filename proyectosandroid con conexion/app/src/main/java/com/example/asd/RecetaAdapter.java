@@ -46,7 +46,6 @@ public class RecetaAdapter extends RecyclerView.Adapter<RecetaAdapter.RecetaView
         // Puedes configurar más vistas aquí si es necesario
     }
 
-
     @Override
     public int getItemCount() {
         return listaRecetas.size();
@@ -55,8 +54,6 @@ public class RecetaAdapter extends RecyclerView.Adapter<RecetaAdapter.RecetaView
     public class RecetaViewHolder extends RecyclerView.ViewHolder {
         public ImageView imagenImageView;
         public TextView nombreTextView;
-
-
 
         public RecetaViewHolder(View view) {
             super(view);

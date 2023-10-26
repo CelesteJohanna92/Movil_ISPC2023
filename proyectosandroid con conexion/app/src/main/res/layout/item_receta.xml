@@ -40,8 +40,8 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/itemsDescriptionReceta"
-                android:text="@string/itemsDescriptionReceta"
+                android:id="@+id/itenDescripcionReceta"
+                android:text="@string/itenDescripcionReceta"
                 android:textColor="#000"
                 android:background="#7f8fa6"
                 android:layout_width="match_parent"
