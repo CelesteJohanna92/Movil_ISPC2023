@@ -1,5 +1,4 @@
 package com.example.asd;
-
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
@@ -53,7 +52,7 @@ public class SubirRecetas extends AppCompatActivity {
         Bundle b = getIntent().getExtras();
         if (b != null) {
             id = b.getInt("id");
-            // Resto del código
+
         }
 
         dao = new daoUsuario(this);
@@ -102,9 +101,19 @@ public class SubirRecetas extends AppCompatActivity {
 
             String categoria = spinnerCategoria.getSelectedItem().toString();
             agregarReceta(nombre, ingredientes, instrucciones, imagenBytes, categoria);
+
+            // Limpiar los campos después de subir la receta con éxito
+            limpiarCampos();
+
         });
     }
-
+            //metodo para limpiar
+             private void limpiarCampos() { edtNombre.getText().clear();
+             edtIngredientes.getText().clear();
+             edtInstrucciones.getText().clear();
+             btnImagen.setImageURI(null);
+             spinnerCategoria.setSelection(0);
+    }
     private String getPathFromUri(Uri uri) {
         String[] projection = { MediaStore.Images.Media.DATA };
         Cursor cursor = getContentResolver().query(uri, projection, null, null, null);
