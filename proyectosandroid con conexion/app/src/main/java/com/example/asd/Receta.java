@@ -1,6 +1,7 @@
 package com.example.asd;
 
 public class Receta {
+
     private int id;
     private int idCategoria;
     private int idUsuario;

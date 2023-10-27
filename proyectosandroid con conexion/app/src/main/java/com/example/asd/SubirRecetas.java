@@ -155,9 +155,11 @@ public class SubirRecetas extends AppCompatActivity {
 
         try {
             int idCategoria = dao.obtenerIdCategoria(categoria);
+
             if (idCategoria != -1) {
                 dao.insertarReceta(idCategoria, idUsuario, nombre, ingredientes, instrucciones, imagenBytes);
                 Toast.makeText(this, "La receta ha sido subida con éxito", Toast.LENGTH_SHORT).show();
+
             } else {
                 Toast.makeText(this, "Categoría no encontrada en la base de datos", Toast.LENGTH_SHORT).show();
             }
@@ -166,6 +168,7 @@ public class SubirRecetas extends AppCompatActivity {
             Toast.makeText(this, "Error al subir la receta", Toast.LENGTH_SHORT).show();
         }
     }
+
 
     private byte[] convertirImagenBytes(Uri uri) {
         try {

@@ -2,11 +2,13 @@ package com.example.asd;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
 public class SinAlcohol extends AppCompatActivity {
 
+    RecyclerView recyclerViewSinAlcohol;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
