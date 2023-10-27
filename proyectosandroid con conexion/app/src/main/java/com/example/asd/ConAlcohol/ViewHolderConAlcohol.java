@@ -1,4 +1,4 @@
-package com.example.asd;
+package com.example.asd.ConAlcohol;
 
 import android.content.Context;
 import android.view.View;
@@ -9,6 +9,8 @@ import android.graphics.BitmapFactory;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.asd.R;
 
 public class ViewHolderConAlcohol extends RecyclerView.ViewHolder {
 

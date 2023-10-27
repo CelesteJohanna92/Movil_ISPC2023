@@ -1,4 +1,4 @@
-package com.example.asd;
+package com.example.asd.ConAlcohol;
 
 public class ObjetoConAlcohol {
 

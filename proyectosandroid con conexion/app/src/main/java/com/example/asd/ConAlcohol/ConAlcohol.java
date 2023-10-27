@@ -1,9 +1,8 @@
-package com.example.asd;
+package com.example.asd.ConAlcohol;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -11,13 +10,14 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-public class SinAlcohol extends AppCompatActivity {
+import com.example.asd.R;
 
-    RecyclerView recyclerViewSinAlcohol;
+public class ConAlcohol extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sin_alcohol);
+        setContentView(R.layout.activity_con_alcohol);
 
         ActionBar actionBar = getSupportActionBar();
         assert actionBar != null;
@@ -29,20 +29,23 @@ public class SinAlcohol extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
-        menuInflater.inflate(R.menu.menu, menu);
+        menuInflater.inflate(R.menu.menu_agregar, menu);
+        menuInflater.inflate(R.menu.menu_vista, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if (item.getItemId() == R.id.SubirRecetas) {
+        if (item.getItemId() == R.id.Agregar) {
             Toast.makeText(this, "Agregar", Toast.LENGTH_SHORT).show();
+            return true;
+        }
+        if (item.getItemId() == R.id.Vista) {
+            Toast.makeText(this, "Vista", Toast.LENGTH_SHORT).show();
             return true;
         }
         return super.onOptionsItemSelected(item);
     }
-
-
     @Override
     public boolean onSupportNavigateUp() {
         onBackPressed();

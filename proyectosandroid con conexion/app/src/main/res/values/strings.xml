@@ -86,6 +86,10 @@
     <string name="Categoria">Categoria</string>
     <string name="Imagen">Imagen</string>
 
+    <!--Menu agregar-->
+    <string name="Agregar">Agregar</string>
+    <string name="Vista">Vista</string>
+
     <!--Items Receta sin alcohol-->
 
     <string name="itemsImagenSinAlcohol">--</string>
@@ -99,7 +103,11 @@
     <string name="itemTextImagen">--</string>
     <string name="itenDescripcionReceta">--</string>
 
-
+    <!--Con Alcohol-->
+    <string name="NombreConAlcohol">Nombre de receta</string>
+    <string name="EscribaAquiConAlcohol">Escriba nombre aqui</string>
+    <string name="VistaConAlcohol">0</string>
+    <string name="PublicarConAlchol">Publicar</string>
 
     <!---Sobre nosotros-->
     <string name="OptimusWeb">OptimusWeb</string>

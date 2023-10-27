@@ -8,8 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import com.example.asd.R;
-import com.example.asd.SinAlcohol;
-import com.example.asd.ConAlcohol;
+import com.example.asd.SinAlcohol.SinAlcohol;
+import com.example.asd.ConAlcohol.ConAlcohol;
 public class Categorias extends Fragment {
 
     Button ColctelSA;
