@@ -27,7 +27,7 @@
         <!--texto-->
         <TextView
 
-            android:text="@string/SubirReceta"
+            android:text="@string/SubirRecetas"
             android:gravity="center"
             android:textColor="#000"
             android:textStyle="bold"

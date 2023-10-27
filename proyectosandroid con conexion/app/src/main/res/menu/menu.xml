@@ -25,6 +25,13 @@
         </item>
 
         <item
+            android:id="@+id/SubirRecetas"
+            android:title="@string/Subir_Receta"
+            android:icon="@drawable/subir_receta">
+
+        </item>
+
+        <item
             android:id="@+id/Perfil"
             android:title="@string/Perfil"
             android:icon="@drawable/usuario">

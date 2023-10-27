@@ -78,7 +78,7 @@
 
     <!--Subir_Receta-->
 
-    <string name="SubirReceta">Subir Receta</string>
+    <string name="SubirRecetas">Subir Receta</string>
     <string name="AGREGAR">AGREGAR</string>
     <string name="NombreReceta">Nombre</string>
     <string name="Ingrediente">Ingredientes</string>
