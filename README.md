@@ -20,6 +20,7 @@
 - Interfaz de usuario amigable y atractiva.
 
 ## Capturas de Pantalla
+- Observamos algunas plantillas de la aplicación Cotelis.
 
   <img src= https://github.com/CelesteJohanna92/Movil_ISPC2023/blob/Develop/Dise%C3%B1o%20de%20pantallas/plantillas%20(home%2C%20registro%20y%20inicio%20sesi%C3%B3n).png/>
   <IMG SRC= https://github.com/CelesteJohanna92/Movil_ISPC2023/blob/Develop/Dise%C3%B1o%20de%20pantallas/plantilla%20(categorias%2C%20subir%20receta%20y%20sobre%20nosotros).png/>
