@@ -86,11 +86,19 @@
     <string name="Categoria">Categoria</string>
     <string name="Imagen">Imagen</string>
 
-    <!--Items Receta-->
+    <!--Items Receta sin alcohol-->
+
+    <string name="itemsImagenSinAlcohol">--</string>
+    <string name="itemNombreSinAlcohol">--</string>
+    <string name="itemDescripcionSinAlcohol">--</string>
+
+
+    <!--Items Receta con alcohol-->
 
     <string name="itemsImagenReceta">--</string>
     <string name="itemTextImagen">--</string>
     <string name="itenDescripcionReceta">--</string>
+
 
 
     <!---Sobre nosotros-->
