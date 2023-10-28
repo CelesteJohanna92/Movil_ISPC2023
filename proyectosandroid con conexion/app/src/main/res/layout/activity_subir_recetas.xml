@@ -14,7 +14,6 @@
         android:layout_height="?attr/actionBarSize"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         tools:ignore="MissingConstraints">
-        <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light">-->
     </androidx.appcompat.widget.Toolbar>
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -24,9 +23,8 @@
         android:gravity="center"
         android:padding="30dp">
 
-        <!--texto-->
+        <!-- Texto -->
         <TextView
-
             android:text="@string/SubirRecetas"
             android:gravity="center"
             android:textColor="#000"
@@ -34,10 +32,9 @@
             android:textSize="40sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"/>
+            android:layout_marginBottom="10dp" />
 
-
-        <!--NOMBRE RECETA-->
+        <!-- Nombre de la receta -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -50,7 +47,8 @@
                 android:inputType="textCapWords|textAutoComplete" />
 
         </com.google.android.material.textfield.TextInputLayout>
-        <!--INGREDIENTES-->
+
+        <!-- Ingredientes -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -61,10 +59,11 @@
                 android:inputType="textCapWords|textAutoComplete"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:layout_marginBottom="2dp"/>
+                android:layout_marginBottom="2dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
-        <!--Descripcion-->
+
+        <!-- Descripción -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -74,11 +73,11 @@
                 android:hint="@string/Descripción"
                 android:inputType="textCapWords|textAutoComplete"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"/>
+                android:layout_height="80dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!--Categoria-->
+        <!-- Categoría -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -89,25 +88,24 @@
                 android:layout_height="50dp"
                 android:layout_margin="5dp"
                 android:entries="@array/opciones_categoria"
-                android:prompt="@string/selecciona_categoria"/>
+                android:prompt="@string/selecciona_categoria" />
 
         </com.google.android.material.textfield.TextInputLayout>
-        <!--Imagen-->
+
+        <!-- URL de la imagen -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <ImageButton
-                android:id="@+id/imagen"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/ic_action_imgcarga"
-                android:layout_marginTop="1dp"
-                android:contentDescription="@string/Imagen"
-                android:padding="12dp"/>
+            <EditText
+                android:id="@+id/ImagenURL"
+                android:hint="Link de la imagen"
+                android:inputType="textCapWords"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!--botón-->
+        <!-- Botón -->
         <Button
             android:id="@+id/SubirRecetas"
             android:text="@string/AGREGAR"
@@ -118,6 +116,5 @@
             android:layout_height="wrap_content" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
