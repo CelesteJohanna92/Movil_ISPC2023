@@ -104,7 +104,7 @@ public class Inicio extends AppCompatActivity implements View.OnClickListener {
             } else if (dao.updateUsuario(u)) {
                 Toast.makeText(this, "Actualización exitoso!!", Toast.LENGTH_SHORT).show();
 
-                Intent i2 = new Intent(this, Inicio.class); // Usa "Editar.class" en lugar de "Editar.this"
+                Intent i2 = new Intent(this, MainActivity.class); // Usa "Editar.class" en lugar de "Editar.this"
                 i2.putExtra("id", u.getId());
                 startActivity(i2);
 

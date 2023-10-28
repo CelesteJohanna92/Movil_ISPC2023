@@ -62,7 +62,7 @@ public class Editar extends AppCompatActivity implements View.OnClickListener{
                 Toast.makeText(this, "Error: campos vacíos", Toast.LENGTH_SHORT).show();
             } else if (dao.updateUsuario(u)) {
                 Toast.makeText(this, "Actualización exitosa!!", Toast.LENGTH_SHORT).show();
-                Intent i2 = new Intent(Editar.this, Inicio.class);
+                Intent i2 = new Intent(Editar.this, MainActivity.class);
                 i2.putExtra("Id", u.getId());
                 startActivity(i2);
                 finish();

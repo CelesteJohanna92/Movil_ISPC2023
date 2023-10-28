@@ -8,7 +8,9 @@ public class Receta {
     private String nombre;
     private String ingredientes;
     private String instrucciones;
-    private byte[] imagen;
+    private String imagen;
+
+    private String nombreCategoria;
 
     // Constructor
     public Receta() {
@@ -64,12 +66,13 @@ public class Receta {
         this.instrucciones = instrucciones;
     }
 
-    public byte[] getImagen() {
+    public String getImagenURL() {
         return imagen;
     }
 
-    public void setImagen(byte[] imagen) {
-        this.imagen = imagen;
+    public void setImagenURL(String imagenURL) {
+        this.imagen = imagenURL;
     }
+
 }
 
