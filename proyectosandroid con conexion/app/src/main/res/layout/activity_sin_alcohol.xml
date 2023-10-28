@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SinAlcohol.SinAlcohol">
+    tools:context=".SinAlcohol">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarB"
@@ -26,6 +26,12 @@
         android:text="@string/Colctelsa"
         android:textColor="@color/cardview_light_background"
         android:textSize="35sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSinAlcohol"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <ImageView
         android:layout_width="match_parent"
