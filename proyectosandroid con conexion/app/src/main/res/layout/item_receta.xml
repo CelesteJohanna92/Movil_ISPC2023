@@ -21,8 +21,9 @@
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/itemsImagenReceta"
             android:scaleType="centerCrop"
-            android:layout_width="match_parent"
-            android:layout_height="200dp" />
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/itemTextImagen"
@@ -34,22 +35,41 @@
             android:background="#131f30"
             android:gravity="center" />
 
-        <androidx.appcompat.widget.LinearLayoutCompat
+        <TextView
+            android:id="@+id/títuloIngredientes"
+            android:text="@string/Ingrediente"
+            android:textColor="#000"
+            android:background="#7f8fa6"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/itenDescripcionReceta"
-                android:text="@string/itenDescripcionReceta"
-                android:textColor="#000"
-                android:background="#7f8fa6"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                />
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
+            android:layout_height="match_parent"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/itemIngredientesReceta"
+            android:text="@string/itenDescripcionReceta"
+            android:textColor="#000"
+            android:background="#7f8fa6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/títuloInstrucciones"
+            android:text="@string/Descripción"
+            android:textColor="#000"
+            android:background="#7f8fa6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/itemInstruccionesReceta"
+            android:text="@string/itemIngredientesReceta"
+            android:textColor="#000"
+            android:background="#7f8fa6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 </androidx.cardview.widget.CardView>
