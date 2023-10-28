@@ -21,7 +21,7 @@
             android:name=".SubirRecetas"
             android:exported="false" />
         <activity
-            android:name=".ConAlcohol.ConAlcohol"
+            android:name=".ConAlcohol"
             android:exported="false"
             android:theme="@style/Theme.AppCompat" />
         <activity

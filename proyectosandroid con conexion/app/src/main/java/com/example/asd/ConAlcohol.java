@@ -1,8 +1,10 @@
-package com.example.asd.ConAlcohol;
+package com.example.asd;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,9 +12,12 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.example.asd.R;
+import java.util.List;
 
 public class ConAlcohol extends AppCompatActivity {
+
+    RecyclerView recyclerViewConAlcohol;
+    RecetaAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,10 +26,20 @@ public class ConAlcohol extends AppCompatActivity {
 
         ActionBar actionBar = getSupportActionBar();
         assert actionBar != null;
-        actionBar.setTitle("Categorias");
+        actionBar.setTitle("Categoría Con Alcohol");
         actionBar.setDisplayShowHomeEnabled(true);
         actionBar.setDisplayHomeAsUpEnabled(true);
-        }
+
+        recyclerViewConAlcohol = findViewById(R.id.recyclerViewConAlcohol);
+        recyclerViewConAlcohol.setLayoutManager(new LinearLayoutManager(this));
+
+        daoUsuario dao = new daoUsuario(this);
+        List<Receta> listaRecetasConAlcohol = dao.selectRecetasConAlcohol();
+        dao.close();
+
+        adapter = new RecetaAdapter(listaRecetasConAlcohol, this);
+        recyclerViewConAlcohol.setAdapter(adapter);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -46,6 +61,7 @@ public class ConAlcohol extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
     @Override
     public boolean onSupportNavigateUp() {
         onBackPressed();
