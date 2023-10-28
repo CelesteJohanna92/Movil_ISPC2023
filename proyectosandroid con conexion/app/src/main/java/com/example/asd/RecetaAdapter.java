@@ -1,13 +1,16 @@
 package com.example.asd;
 
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
+import android.net.Uri;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Callback;
+
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
@@ -32,18 +35,32 @@ public class RecetaAdapter extends RecyclerView.Adapter<RecetaAdapter.RecetaView
     public void onBindViewHolder(RecetaViewHolder holder, int position) {
         Receta receta = listaRecetas.get(position);
         holder.nombreTextView.setText(receta.getNombre());
+        holder.ingredientesView.setText(receta.getIngredientes());
+        holder.instruccionesView.setText(receta.getInstrucciones());
 
-        // Comprueba si la receta tiene datos de imagen válidos
-        if (receta.getImagen() != null && receta.getImagen().length > 0) {
-            // Convierte el array de bytes en un Bitmap (si es una imagen en formato bitmap)
-            Bitmap imagenBitmap = BitmapFactory.decodeByteArray(receta.getImagen(), 0, receta.getImagen().length);
-            holder.imagenImageView.setImageBitmap(imagenBitmap);
+        String imagenURL = receta.getImagenURL();
+
+        Log.d("RecetaAdapter", "URL de imagen: " + imagenURL);
+        loadImage(imagenURL, holder.imagenImageView);
+    }
+    public void loadImage(String imagenURL, ImageView imageView) {
+        if (imagenURL != null && !imagenURL.isEmpty()) {
+            Uri uri = Uri.parse(imagenURL);
+            if (uri != null && uri.isAbsolute()) {
+                Picasso.get()
+                        .load(imagenURL)
+                        .placeholder(R.drawable.encabezado)
+                        .error(R.drawable.margarita)
+                        .fit()
+                        .into(imageView);
+            } else {
+                // URL de la imagen no válida
+                imageView.setImageResource(R.drawable.margarita);
+            }
         } else {
-            // Establece una imagen predeterminada si no hay datos de imagen válidos
-            holder.imagenImageView.setImageResource(R.drawable.encabezado); // Reemplaza con tu recurso de imagen predeterminada
+            // URL de la imagen vacía o nula
+            imageView.setImageResource(R.drawable.margarita);
         }
-
-        // Puedes configurar más vistas aquí si es necesario
     }
 
     @Override
@@ -53,13 +70,18 @@ public class RecetaAdapter extends RecyclerView.Adapter<RecetaAdapter.RecetaView
 
     public class RecetaViewHolder extends RecyclerView.ViewHolder {
         public ImageView imagenImageView;
-        public TextView nombreTextView;
+        public TextView nombreTextView, ingredientesView, instruccionesView;
 
         public RecetaViewHolder(View view) {
             super(view);
             imagenImageView = view.findViewById(R.id.itemsImagenReceta);
             nombreTextView = view.findViewById(R.id.itemTextImagen);
+            ingredientesView = view.findViewById(R.id.itemIngredientesReceta);
+            instruccionesView = view.findViewById(R.id.itemInstruccionesReceta);
 
         }
+    }
+    public void setRecetas(List<Receta> listaRecetas) {
+        this.listaRecetas = listaRecetas;
     }
 }
