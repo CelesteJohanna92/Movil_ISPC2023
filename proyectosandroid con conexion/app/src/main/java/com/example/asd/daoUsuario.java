@@ -16,7 +16,7 @@ public class daoUsuario {
     static SQLiteDatabase sql;
     String bd = "Coctelis.db";
     String tabla = "create table if not exists usuario(id integer primary key autoincrement, usuario text, password text, nombre text, apellido text, estado_sesion integer)";
-    String tablaReceta = "create table if not exists receta(id integer primary key autoincrement, id_categoria integer, id_usuario integer, nombre text, ingredientes text, instrucciones text, imagen blob, foreign key (id_categoria) references categoria(id), foreign key (id_usuario) references usuario(id))";
+    String tablaReceta = "create table if not exists receta(id integer primary key autoincrement, id_categoria integer, id_usuario integer, nombre text, ingredientes text, instrucciones text, imagen text, foreign key (id_categoria) references categoria(id), foreign key (id_usuario) references usuario(id))";
     String tablaCategoria = "create table if not exists categoria(id integer primary key autoincrement, nombre text)";
     public daoUsuario(Context c){
         this.c=c;
@@ -27,108 +27,6 @@ public class daoUsuario {
         u=new Usuario();
     }
 
-    public void insertarReceta(String nombreCategoria, int idUsuario, String nombre, String ingredientes, String instrucciones, byte[] imagenBytes, boolean conAlcohol) {
-        int idCategoria = obtenerIdCategoria(nombreCategoria, conAlcohol);
-
-        ContentValues cv = new ContentValues();
-        cv.put("id_categoria", idCategoria);
-        cv.put("id_usuario", idUsuario);
-        cv.put("nombre", nombre);
-        cv.put("ingredientes", ingredientes);
-        cv.put("instrucciones", instrucciones);
-        cv.put("imagen", imagenBytes);
-        sql.insert("receta", null, cv);
-    }
-
-    public ArrayList<Receta> selectRecetas(boolean conAlcohol) {
-        ArrayList<Receta> listaRecetas = new ArrayList<>();
-        listaRecetas.clear();
-
-        String categoriaFilter = conAlcohol ? "con_alcohol" : "sin_alcohol";
-
-        Cursor cursor = sql.rawQuery("SELECT r.* FROM receta r " +
-                "INNER JOIN categoria c ON r.id_categoria = c.id " +
-                "WHERE c." + categoriaFilter + " = 1", null);
-
-        if (cursor != null && cursor.moveToFirst()) {
-            do {
-                Receta receta = new Receta();
-                receta.setId(cursor.getInt(0));
-                receta.setIdCategoria(cursor.getInt(1));
-                receta.setIdUsuario(cursor.getInt(2));
-                receta.setNombre(cursor.getString(3));
-                receta.setIngredientes(cursor.getString(4));
-                receta.setInstrucciones(cursor.getString(5));
-                byte[] imagenBytes = cursor.getBlob(6);
-                receta.setImagen(imagenBytes);
-
-                listaRecetas.add(receta);
-            } while (cursor.moveToNext());
-        }
-
-        cursor.close();
-        return listaRecetas;
-    }
-
-    public void insertarRecetaSinAlcohol(int idUsuario, String nombre, String ingredientes, String instrucciones, byte[] imagenBytes) {
-        int idCategoria = obtenerIdCategoria("sin_alcohol");
-
-        ContentValues cv = new ContentValues();
-        cv.put("id_categoria", idCategoria);
-        cv.put("id_usuario", idUsuario);
-        cv.put("nombre", nombre);
-        cv.put("ingredientes", ingredientes);
-        cv.put("instrucciones", instrucciones);
-        cv.put("imagen", imagenBytes);
-        sql.insert("receta", null, cv);
-    }
-
-    public ArrayList<Receta> selectRecetasSinAlcohol() {
-        ArrayList<Receta> listaRecetas = new ArrayList<>();
-        listaRecetas.clear();
-
-        String categoriaFilter = "sin_alcohol";
-
-        Cursor cursor = sql.rawQuery("SELECT r.* FROM receta r " +
-                "INNER JOIN categoria c ON r.id_categoria = c.id " +
-                "WHERE c." + categoriaFilter + " = 1", null);
-
-        if (cursor != null && cursor.moveToFirst()) {
-            do {
-                Receta receta = new Receta();
-                receta.setId(cursor.getInt(0));
-                receta.setIdCategoria(cursor.getInt(1));
-                receta.setIdUsuario(cursor.getInt(2));
-                receta.setNombre(cursor.getString(3));
-                receta.setIngredientes(cursor.getString(4));
-                receta.setInstrucciones(cursor.getString(5));
-                byte[] imagenBytes = cursor.getBlob(6);
-                receta.setImagen(imagenBytes);
-
-                listaRecetas.add(receta);
-            } while (cursor.moveToNext());
-        }
-
-        cursor.close();
-        return listaRecetas;
-    }
-
-    private int obtenerIdCategoria(String nombreCategoria, boolean conAlcohol) {
-        Cursor cursor = sql.rawQuery("SELECT id FROM categoria WHERE nombre=?", new String[]{nombreCategoria});
-        if (cursor != null && cursor.moveToFirst()) {
-            int idCategoria = cursor.getInt(0);
-            cursor.close();
-            return idCategoria;
-        }
-
-
-        ContentValues cv = new ContentValues();
-        cv.put("nombre", nombreCategoria);
-        cv.put("con_alcohol", conAlcohol ? 1 : 0);
-        sql.insert("categoria", null, cv);
-
-        return obtenerIdCategoria(nombreCategoria, conAlcohol);
-    }
 
     public boolean insertarUsuario(Usuario u){
         if (buscar(u.getUsuario())==0){
@@ -229,16 +127,18 @@ public class daoUsuario {
         return -1;
     }
 
-    public void insertarReceta(int idCategoria, int idUsuario, String nombre, String ingredientes, String instrucciones, byte[] imagenBytes) {
+    public void insertarReceta(int idCategoria, int idUsuario, String nombre, String ingredientes, String instrucciones, String imagen) {
         ContentValues cv = new ContentValues();
         cv.put("id_categoria", idCategoria);
         cv.put("id_usuario", idUsuario);
         cv.put("nombre", nombre);
         cv.put("ingredientes", ingredientes);
         cv.put("instrucciones", instrucciones);
-        cv.put("imagen", imagenBytes);
+        cv.put("imagen", imagen);
         sql.insert("receta", null, cv);
     }
+
+
 
     public ArrayList<Receta> selectRecetas() {
         ArrayList<Receta> listaRecetas = new ArrayList<>();
@@ -253,15 +153,14 @@ public class daoUsuario {
                 receta.setNombre(cursor.getString(3));
                 receta.setIngredientes(cursor.getString(4));
                 receta.setInstrucciones(cursor.getString(5));
-                byte[] imagenBytes = cursor.getBlob(6);
-                receta.setImagen(imagenBytes);
-
+                receta.setImagenURL(cursor.getString(6)); // Aquí recuperamos la URL
                 listaRecetas.add(receta);
             } while (cursor.moveToNext());
         }
         cursor.close();
         return listaRecetas;
     }
+
 
     public void insertarCategoria(String nombreCategoria) {
         if (!existeCategoria(nombreCategoria)) {
@@ -292,6 +191,57 @@ public class daoUsuario {
         return categorias;
     }
 
+    public ArrayList<Receta> selectRecetasSinAlcohol() {
+        ArrayList<Receta> listaRecetasSinAlcohol = new ArrayList<>();
+        listaRecetasSinAlcohol.clear();
+
+        int idCategoriaSinAlcohol = obtenerIdCategoria("Sin alcohol");
+
+        Cursor cursor = sql.rawQuery("SELECT * FROM receta WHERE id_categoria=?", new String[]{String.valueOf(idCategoriaSinAlcohol)});
+
+        if (cursor != null && cursor.moveToFirst()) {
+            do {
+                Receta receta = new Receta();
+                receta.setId(cursor.getInt(0));
+                receta.setIdCategoria(cursor.getInt(1));
+                receta.setIdUsuario(cursor.getInt(2));
+                receta.setNombre(cursor.getString(3));
+                receta.setIngredientes(cursor.getString(4));
+                receta.setInstrucciones(cursor.getString(5));
+                receta.setImagenURL(cursor.getString(6));
+                listaRecetasSinAlcohol.add(receta);
+            } while (cursor.moveToNext());
+        }
+        cursor.close();
+
+        return listaRecetasSinAlcohol;
+    }
+
+    public ArrayList<Receta> selectRecetasConAlcohol() {
+        ArrayList<Receta> listaRecetasConAlcohol = new ArrayList<>();
+        listaRecetasConAlcohol.clear();
+
+        int idCategoriaConAlcohol = obtenerIdCategoria("Con alcohol");
+
+        Cursor cursor = sql.rawQuery("SELECT * FROM receta WHERE id_categoria=?", new String[]{String.valueOf(idCategoriaConAlcohol)});
+
+        if (cursor != null && cursor.moveToFirst()) {
+            do {
+                Receta receta = new Receta();
+                receta.setId(cursor.getInt(0));
+                receta.setIdCategoria(cursor.getInt(1));
+                receta.setIdUsuario(cursor.getInt(2));
+                receta.setNombre(cursor.getString(3));
+                receta.setIngredientes(cursor.getString(4));
+                receta.setInstrucciones(cursor.getString(5));
+                receta.setImagenURL(cursor.getString(6));
+                listaRecetasConAlcohol.add(receta);
+            } while (cursor.moveToNext());
+        }
+        cursor.close();
+
+        return listaRecetasConAlcohol;
+    }
     public void close() {
         if (sql != null && sql.isOpen()) {
             sql.close();
