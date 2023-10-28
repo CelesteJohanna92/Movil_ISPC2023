@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragmentos.Categorias">
+    tools:context=".Fragmentos.Categorias"
+    android:background="@color/color1">
 
     <!-- TODO: Update blank fragment layout -->
     <androidx.appcompat.widget.Toolbar
@@ -26,7 +27,8 @@
         android:paddingTop="50dp"
         android:text="@string/Categorias"
         android:textColor="@color/cardview_light_background"
-        android:textSize="35sp" />
+        android:textSize="35sp"
+        android:fontFamily="@font/letrauno"/>
 
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -57,7 +59,8 @@
                 android:background="@drawable/btn_personalizado_cuatro"
                 android:gravity="center"
                 android:text="@string/Coctelca"
-                android:textColor="#ffffff" />
+                android:textColor="#ffffff"
+                android:fontFamily="@font/letrauno"/>
         </androidx.appcompat.widget.LinearLayoutCompat>
 
 
@@ -82,7 +85,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/btn_personalizado_cuatro"
                 android:text="@string/Colctelsa"
-                android:textColor="#ffffff" />
+                android:textColor="#ffffff"
+                android:fontFamily="@font/letrauno"/>
         </androidx.appcompat.widget.LinearLayoutCompat>
 
     </androidx.appcompat.widget.LinearLayoutCompat>

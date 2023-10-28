@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/color1">
 
 
     <TextView
@@ -16,6 +17,10 @@
         android:layout_weight="1"
         android:gravity="center"
         android:text="EDITAR CUENTA"
+        android:fontFamily="@font/letrauno"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:textColor="#000"
         />
     <EditText
         android:id="@+id/EdiUser"
@@ -65,6 +70,7 @@
         android:textColor="#ffffff"
         android:textSize="30dp"
         android:textStyle="bold"
+        android:fontFamily="@font/letrauno"
         />
     <Button
         android:id="@+id/btnEdiCancelar"
@@ -77,6 +83,7 @@
         android:textColor="#ffffff"
         android:textSize="30dp"
         android:textStyle="bold"
+        android:fontFamily="@font/letrauno"
         />
 
 </LinearLayout>

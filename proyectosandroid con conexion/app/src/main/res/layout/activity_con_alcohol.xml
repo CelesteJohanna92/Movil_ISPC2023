@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ConAlcohol">
+    tools:context=".ConAlcohol"
+    android:background="@color/color1">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarB"
@@ -25,7 +26,8 @@
         android:paddingTop="50dp"
         android:text="@string/Coctelca"
         android:textColor="@color/cardview_light_background"
-        android:textSize="35sp" />
+        android:textSize="35sp"
+        android:fontFamily="@font/letrauno"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewConAlcohol"

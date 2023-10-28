@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#d1d8e0"
+    android:background="@color/color1"
     tools:context=".ConAlcohol.AgregarConAlcohol">
 
     <androidx.appcompat.widget.LinearLayoutCompat

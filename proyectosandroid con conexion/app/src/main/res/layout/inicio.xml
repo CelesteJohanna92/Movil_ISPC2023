@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/color1">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,7 +26,7 @@
             android:textStyle="bold"
             android:radius="10dp"
             android:background="@drawable/btn_personalizado_dos"
-            />
+            android:fontFamily="@font/letrauno"/>
         <Button
             android:radius="10dp"
             android:id="@+id/btnEliminar"
@@ -37,7 +38,7 @@
             android:textColor="#ffffff"
             android:textStyle="bold"
             android:background="@drawable/btn_personalizado_dos"
-
+            android:fontFamily="@font/letrauno"
             />
 
         <Button
@@ -50,7 +51,7 @@
             android:textColor="#ffffff"
             android:textStyle="bold"
             android:background="@drawable/btn_personalizado_dos"
-            />
+            android:fontFamily="@font/letrauno"/>
 
     </LinearLayout>
 
@@ -60,10 +61,10 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:gravity="center"
-        android:textSize="25sp"
+        android:textSize="40sp"
         android:textStyle="bold"
         android:text="Hola! Usuario."
-
+        android:fontFamily="@font/letrauno"
         />
     <ImageView
         android:layout_width="match_parent"

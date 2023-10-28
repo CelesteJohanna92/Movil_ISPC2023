@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragmentos.Home"
-    android:background="#fff">
+    android:background="@color/color1">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -20,8 +20,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="25sp"
-            android:textColor="@color/colorPrimary"/>
+            android:textSize="40sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/letrauno"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
