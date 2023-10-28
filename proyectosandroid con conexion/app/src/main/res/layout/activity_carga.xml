@@ -28,6 +28,16 @@
         android:gravity="bottom|center_horizontal"
         android:orientation="vertical">
 
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="carga_animacion.json"
+            app:lottie_imageAssetsFolder="assets"
+            app:lottie_loop="false" />
+
         <TextView
             android:id="@+id/desarrollador"
             android:layout_width="match_parent"
@@ -41,4 +51,3 @@
     </androidx.appcompat.widget.LinearLayoutCompat>
 
 </RelativeLayout>
-
