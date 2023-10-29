@@ -19,6 +19,12 @@
         app:lottie_fileName="animacion_inicio_sesion.json"
         app:lottie_imageAssetsFolder="assets"
         app:lottie_loop="true" />
+    <TextView
+        android:text="Usuario:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginLeft="20sp"/>
 
     <EditText
         android:id="@+id/User"
@@ -31,6 +37,13 @@
         android:textSize="25sp"
         android:inputType="textEmailAddress"
         />
+    <TextView
+        android:text="Contraseña:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="25sp"/>
     <EditText
         android:id="@+id/Pass"
         android:hint="Contraseña"
@@ -61,9 +74,7 @@
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="10dp"
             android:text="Iniciar sesión"
-            android:fontFamily="@font/letrauno"
             android:textSize="25sp"
-            android:textStyle="bold"
             android:textColor="#ffffff"
             android:background="@drawable/btn_personalizado_dos"
             />
@@ -77,9 +88,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:text="Registrar"
-            android:fontFamily="@font/letrauno"
             android:textSize="25sp"
-            android:textStyle="bold"
             android:textColor="#ffffff"
             android:background="@drawable/btn_personalizado_tres"
             />

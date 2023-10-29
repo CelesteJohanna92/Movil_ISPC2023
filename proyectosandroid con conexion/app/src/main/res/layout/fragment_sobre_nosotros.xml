@@ -20,20 +20,20 @@
         android:text="@string/Sobre_nosotros"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/letrauno"
         android:gravity="center"
-        android:textSize="30dp"
-        android:textColor="#000"/>
+        android:textSize="35dp"
+        android:textColor="#ffff"
+        android:background="@color/colorPrimary"/>
 
     <TextView
         android:id="@+id/OptimusWeb"
         android:text="@string/OptimusWeb"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/letrauno"
         android:gravity="center"
-        android:textColor="#000"
-        android:textSize="25dp"/>
+        android:textColor="#ffff"
+        android:background="@color/colorPrimary"
+        android:textSize="30dp"/>
 
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="wrap_content"
@@ -48,7 +48,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textColor="#000"
-        android:textSize="15dp"/>
+        android:textSize="18dp"/>
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>

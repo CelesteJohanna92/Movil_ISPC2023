@@ -20,9 +20,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="40sp"
-            android:textColor="@color/colorPrimary"
-            android:fontFamily="@font/letrauno"/>
+            android:textSize="35sp"
+            android:textColor="@color/colorPrimary"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"

@@ -27,8 +27,7 @@
         android:paddingTop="50dp"
         android:text="@string/Categorias"
         android:textColor="@color/cardview_light_background"
-        android:textSize="35sp"
-        android:fontFamily="@font/letrauno"/>
+        android:textSize="35sp"/>
 
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -55,12 +54,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 android:background="@drawable/btn_personalizado_cuatro"
                 android:gravity="center"
                 android:text="@string/Coctelca"
                 android:textColor="#ffffff"
-                android:fontFamily="@font/letrauno"/>
+                android:textSize="18dp"
+                />
         </androidx.appcompat.widget.LinearLayoutCompat>
 
 
@@ -69,6 +70,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <androidx.appcompat.widget.AppCompatImageView
@@ -81,12 +83,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:layout_marginStart="5dp"
-                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 android:background="@drawable/btn_personalizado_cuatro"
+                android:gravity="center"
                 android:text="@string/Colctelsa"
                 android:textColor="#ffffff"
-                android:fontFamily="@font/letrauno"/>
+                android:textSize="18dp"/>
         </androidx.appcompat.widget.LinearLayoutCompat>
 
     </androidx.appcompat.widget.LinearLayoutCompat>

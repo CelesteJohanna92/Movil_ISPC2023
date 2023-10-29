@@ -7,7 +7,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:background="@color/color1">
+    android:background="@color/color1"
+    >
 
 
     <TextView
@@ -16,74 +17,116 @@
         android:layout_margin="20dp"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="EDITAR CUENTA"
-        android:fontFamily="@font/letrauno"
+        android:text="Editar Cuenta"
         android:textStyle="bold"
-        android:textSize="40sp"
+        android:textSize="35sp"
         android:textColor="#000"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario:"
+        android:textSize="18dp"
+        android:layout_marginLeft="15sp"
+        android:paddingBottom="1dp"
+        android:layout_marginBottom="-18dp"
         />
     <EditText
         android:id="@+id/EdiUser"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="20dp"
+        android:paddingTop="8dp"
         android:layout_weight="1"
         android:hint="Usuario"
         android:enabled="false"
         android:inputType="textEmailAddress"
+
         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contraseña:"
+        android:textSize="18dp"
+        android:layout_marginLeft="15sp"
+        android:paddingBottom="1dp"
+        android:layout_marginBottom="-18dp"/>
     <EditText
         android:id="@+id/EdiPass"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="20dp"
         android:layout_weight="1"
-        android:hint="Password"
+        android:paddingTop="8dp"
+        android:hint="Contraseña"
         android:inputType="textEmailAddress"
         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:textSize="18dp"
+        android:layout_marginLeft="15sp"
+        android:paddingBottom="1dp"
+        android:layout_marginBottom="-18dp"/>
     <EditText
         android:id="@+id/EdiNombre"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="20dp"
         android:layout_weight="1"
+        android:paddingTop="8dp"
         android:hint="Nombre"
         android:inputType="textPersonName"
         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellido:"
+        android:textSize="18dp"
+        android:layout_marginLeft="15sp"
+        android:paddingBottom="1dp"
+        android:layout_marginBottom="-18dp"/>
     <EditText
         android:id="@+id/EdiApellido"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="20dp"
         android:layout_weight="1"
-        android:hint="Apellidos"
+        android:paddingTop="8dp"
+        android:hint="Apellido"
         android:inputType="textPersonName"
         />
     <Button
         android:id="@+id/btnEdiActualizar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_personalizado_tres"
         android:layout_weight="1"
-        android:background="#6495ed"
         android:text="Actualizar"
         android:textColor="#ffffff"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:textStyle="bold"
-        android:fontFamily="@font/letrauno"
         />
     <Button
         android:id="@+id/btnEdiCancelar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_weight="1"
-        android:background="#131f30"
         android:text="Cancelar"
         android:textColor="#ffffff"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:textStyle="bold"
-        android:fontFamily="@font/letrauno"
+        android:background="@drawable/btn_personalizado_dos"
         />
 
 </LinearLayout>

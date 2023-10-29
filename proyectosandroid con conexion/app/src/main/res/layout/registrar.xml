@@ -15,10 +15,9 @@
         android:layout_margin="10dp"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="CREAR NUEVA CUENTA"
-        android:fontFamily="@font/letrauno"
+        android:text="Crear Nueva Cuenta"
         android:textColor="#000"
-        android:textSize="25dp"
+        android:textSize="35dp"
         android:textStyle="bold"/>
 
     <com.airbnb.lottie.LottieAnimationView
@@ -31,6 +30,14 @@
         app:lottie_imageAssetsFolder="assets"
         app:lottie_loop="false" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario:"
+        android:textSize="18dp"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="1dp"
+        android:layout_marginBottom="-18dp"/>
     <EditText
         android:id="@+id/RegUser"
         android:layout_width="match_parent"
@@ -40,7 +47,14 @@
         android:hint="Usuario"
         android:inputType="textEmailAddress"
         />
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:textSize="18dp"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="1dp"
+        android:layout_marginBottom="-18dp"/>
     <EditText
         android:id="@+id/RegNombre"
         android:layout_width="match_parent"
@@ -50,48 +64,64 @@
         android:hint="Nombre"
         android:inputType="textPersonName"
         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellido:"
+        android:textSize="18dp"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="1dp"
+        android:layout_marginBottom="-18dp"/>
     <EditText
         android:id="@+id/RegApellido"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="10dp"
         android:layout_weight="1"
-        android:hint="Apellidos"
+        android:hint="Apellido"
         android:inputType="textPersonName"
         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contraseña:"
+        android:textSize="18dp"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="1dp"
+        android:layout_marginBottom="-18dp"/>
     <EditText
         android:id="@+id/RegPass"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="10dp"
         android:layout_weight="1"
-        android:hint="Password"
+        android:hint="Contraseña"
         android:inputType="textPassword"
 
         />
+
     <Button
         android:id="@+id/btnRegRegistrar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@drawable/btn_personalizado_dos"
-        android:fontFamily="@font/letrauno"
+        android:layout_margin="15dp"
+        android:background="@drawable/btn_personalizado_tres"
         android:text="Registrar"
         android:textColor="#ffffff"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:textStyle="bold"
+        android:layout_height="60sp"
         />
+
     <Button
         android:id="@+id/btnRegCancelar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:background="@drawable/btn_personalizado_tres"
-        android:fontFamily="@font/letrauno"
+        android:layout_margin="15dp"
+        android:background="@drawable/btn_personalizado_dos"
         android:text="Cancelar"
         android:textColor="#ffffff"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:textStyle="bold"
+        android:layout_height="60sp"
         />
 
 </LinearLayout>

@@ -21,11 +21,10 @@
             android:id="@+id/Contacto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/letrauno"
             android:gravity="center"
             android:text="@string/Contacto"
             android:textColor="#000"
-            android:textSize="40dp"
+            android:textSize="35dp"
             android:textStyle="bold" />
 
         <com.airbnb.lottie.LottieAnimationView

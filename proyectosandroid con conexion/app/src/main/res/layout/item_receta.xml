@@ -46,15 +46,17 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:textStyle="bold"
+            android:textSize="20dp"
             />
         <TextView
             android:id="@+id/itemIngredientesReceta"
             android:text="@string/itenDescripcionReceta"
             android:textColor="#000"
-            android:background="#7f8fa6"
+            android:background="#fff"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
+            android:textSize="18dp"
             />
         <TextView
             android:id="@+id/títuloInstrucciones"
@@ -64,13 +66,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:textStyle="bold"
+            android:textSize="20dp"
             />
         <TextView
             android:id="@+id/itemInstruccionesReceta"
             android:text="@string/itemIngredientesReceta"
             android:textColor="#000"
-            android:background="#7f8fa6"
+            android:background="#fff"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center" />

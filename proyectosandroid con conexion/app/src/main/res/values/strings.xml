@@ -63,8 +63,8 @@
 
     <string name="CoctelCA">Coc con</string>
     <string name="ColctelSA">Coc sin</string>
-    <string name="Coctelca">Cócteles Con Alcohol</string>
-    <string name="Colctelsa">Cócteles Sin Alcohol</string>
+    <string name="Coctelca">Con Alcohol</string>
+    <string name="Colctelsa">Sin Alcohol</string>
 
     <!--spinner-->
     <string-array name="opciones_categoria">

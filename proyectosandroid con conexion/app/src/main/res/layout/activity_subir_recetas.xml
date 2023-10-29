@@ -22,7 +22,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="center"
-        android:padding="30dp">
+        android:padding="18dp">
 
         <!-- Texto -->
         <TextView
@@ -30,16 +30,26 @@
             android:gravity="center"
             android:textColor="#000"
             android:textStyle="bold"
-            android:textSize="40sp"
+            android:textSize="35sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="@font/letrauno"/>
+            android:layout_marginBottom="10dp"/>
 
         <!-- Nombre de la receta -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre:"
+            android:textSize="18dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="-2dp"
+            android:paddingBottom="1dp"
+            android:layout_marginBottom="-18dp"
+            />
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
 
             <EditText
                 android:id="@+id/NombreReceta"
@@ -51,6 +61,16 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Ingredientes -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingredientes:"
+            android:textSize="18dp"
+            android:layout_gravity="left"
+            android:paddingBottom="1dp"
+            android:layout_marginBottom="-18dp"
+            android:layout_marginLeft="-2dp"
+            />
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -61,11 +81,22 @@
                 android:inputType="textCapWords|textAutoComplete"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:layout_marginBottom="2dp" />
+                android:layout_marginBottom="2dp"
+                />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Descripción -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descripción:"
+            android:textSize="18dp"
+            android:layout_gravity="left"
+            android:paddingBottom="1dp"
+            android:layout_marginBottom="-18dp"
+            android:layout_marginLeft="-2dp"
+            />
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -80,6 +111,16 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Categoría -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categoria:"
+            android:textSize="18dp"
+            android:layout_gravity="left"
+            android:paddingBottom="1dp"
+            android:layout_marginBottom="-18dp"
+            android:layout_marginLeft="-2dp"
+            />
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -95,6 +136,16 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- URL de la imagen -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Link de la imagen:"
+            android:textSize="18dp"
+            android:layout_gravity="left"
+            android:paddingBottom="1dp"
+            android:layout_marginBottom="-18dp"
+            android:layout_marginLeft="-2dp"
+            />
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -111,11 +162,14 @@
         <Button
             android:id="@+id/SubirRecetas"
             android:text="@string/AGREGAR"
-            android:background="#131f30"
+            android:background="@drawable/btn_personalizado_dos"
             android:textColor="#ffffff"
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="60sp"
+            android:textSize="25dp"
+
+            />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

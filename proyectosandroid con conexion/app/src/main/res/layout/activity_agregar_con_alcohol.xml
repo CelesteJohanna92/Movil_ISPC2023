@@ -70,10 +70,11 @@
             android:id="@+id/PublicarConAlchol"
             android:text="@string/PublicarConAlchol"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:background="@drawable/btn_personalizado_cuatro"
             android:textColor="#fff"
-            android:layout_marginTop="15dp"/>
+            android:layout_marginTop="15dp"
+            android:textSize="25dp"
+            android:layout_height="60sp"/>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

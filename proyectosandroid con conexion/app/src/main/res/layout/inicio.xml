@@ -25,8 +25,9 @@
             android:textColor="#ffffff"
             android:textStyle="bold"
             android:radius="10dp"
+            android:textSize="20dp"
             android:background="@drawable/btn_personalizado_dos"
-            android:fontFamily="@font/letrauno"/>
+           />
         <Button
             android:radius="10dp"
             android:id="@+id/btnEliminar"
@@ -37,8 +38,9 @@
             android:text="Eliminar"
             android:textColor="#ffffff"
             android:textStyle="bold"
+            android:textSize="20dp"
             android:background="@drawable/btn_personalizado_dos"
-            android:fontFamily="@font/letrauno"
+
             />
 
         <Button
@@ -50,8 +52,9 @@
             android:text="Salir"
             android:textColor="#ffffff"
             android:textStyle="bold"
+            android:textSize="20dp"
             android:background="@drawable/btn_personalizado_dos"
-            android:fontFamily="@font/letrauno"/>
+            />
 
     </LinearLayout>
 
@@ -64,7 +67,6 @@
         android:textSize="40sp"
         android:textStyle="bold"
         android:text="Hola! Usuario."
-        android:fontFamily="@font/letrauno"
         />
     <ImageView
         android:layout_width="match_parent"
