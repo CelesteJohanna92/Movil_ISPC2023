@@ -10,6 +10,7 @@ import java.util.List;
 
 public class daoUsuario {
 
+    public Receta receta;
     Context c;
     Usuario u;
     ArrayList<Usuario> lista;
@@ -138,7 +139,7 @@ public class daoUsuario {
         sql.insert("receta", null, cv);
     }
 
-    public Receta getRecetaById(int id) {
+    public Receta getReceta(int id) {
         Cursor cursor = sql.rawQuery("SELECT * FROM receta WHERE id=?", new String[]{String.valueOf(id)});
         if (cursor != null && cursor.moveToFirst()) {
             Receta receta = new Receta();
