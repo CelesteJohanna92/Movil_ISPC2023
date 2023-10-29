@@ -1,31 +1,34 @@
-create database if not exists Coctelis;
-
-use Coctelis;
-
-create table if not exists usuario (
-	id int not null auto_increment,
-    nombre varchar(100) not null,
-    apellido varchar(100) not null,
-    correo varchar(100) not null,
-    contraseña varchar(100) not null,
-    primary key (id)
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS "android_metadata" (
+	"locale"	TEXT
 );
-
-create table if not exists categoria (
-	id int not null auto_increment,
-    nombre varchar(100) not null,
-    primary key (id)
+CREATE TABLE IF NOT EXISTS "usuario" (
+	"id"	integer,
+	"usuario"	text,
+	"password"	text,
+	"nombre"	text,
+	"apellido"	text,
+	"estado_sesion"	integer,
+	PRIMARY KEY("id" AUTOINCREMENT)
 );
-
-create table if not exists recetas (
-    id int not null auto_increment,
-    id_categoria int not null,
-    nombre varchar(100) not null,
-    origen varchar(100) not null,
-    tipo varchar(100) not null,
-    ingredientes varchar(100) not null,
-    imagen varchar(100) not null,
-    receta varchar(1000) not null,
-    primary key (id),
-    foreign key (id_categoria) references categoria(id)
+CREATE TABLE IF NOT EXISTS "receta" (
+	"id"	integer,
+	"id_categoria"	integer,
+	"id_usuario"	integer,
+	"nombre"	text,
+	"ingredientes"	text,
+	"instrucciones"	text,
+	"imagen"	text,
+	PRIMARY KEY("id" AUTOINCREMENT),
+	FOREIGN KEY("id_usuario") REFERENCES "usuario"("id"),
+	FOREIGN KEY("id_categoria") REFERENCES "categoria"("id")
 );
+CREATE TABLE IF NOT EXISTS "categoria" (
+	"id"	integer,
+	"nombre"	text,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
+INSERT INTO "android_metadata" VALUES ('es_US');
+INSERT INTO "categoria" VALUES (1,'Con alcohol');
+INSERT INTO "categoria" VALUES (2,'Sin alcohol');
+COMMIT;
