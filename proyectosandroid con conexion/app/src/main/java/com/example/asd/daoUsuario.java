@@ -159,13 +159,19 @@ public class daoUsuario {
 
     public boolean updateReceta(Receta receta) {
         ContentValues cv = new ContentValues();
-        cv.put("imagen", receta.getImagenURL());
         cv.put("nombre", receta.getNombre());
         cv.put("ingredientes", receta.getIngredientes());
         cv.put("instrucciones", receta.getInstrucciones());
-        return (sql.update("receta", cv, "id=" + receta.getId(), null) > 0);
-    }
+        cv.put("imagen", receta.getImagenURL());
 
+        String whereClause = "id=?";
+        String[] whereArgs = {String.valueOf(receta.getId())};
+
+        int rowsAffected = sql.update("receta", cv, whereClause, whereArgs);
+
+
+        return rowsAffected > 0;
+    }
 
 
     public boolean deleteReceta(int id) {

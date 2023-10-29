@@ -74,7 +74,7 @@
             android:gravity="center" />
 
         <Button
-            android:id="@+id/btnEdiActualizar"
+            android:id="@+id/btnActualizarReceta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
@@ -87,7 +87,7 @@
             android:fontFamily="@font/letrauno"
             />
         <Button
-            android:id="@+id/btnEdiCancelar"
+            android:id="@+id/btnEliminarReceta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
