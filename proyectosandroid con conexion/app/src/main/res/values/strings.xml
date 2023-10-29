@@ -110,6 +110,12 @@
     <string name="VistaConAlcohol">0</string>
     <string name="PublicarConAlchol">Publicar</string>
 
+
+    <!--Editar receta-->
+    <string name="EditarNombreImagen">Nombre de la receta</string>
+    <string name="EditarIngredientesReceta">Ingredientes </string>
+    <string name="EditarInstruccionesReceta">Instrucciones</string>
+
     <!---Sobre nosotros-->
     <string name="OptimusWeb">OptimusWeb</string>
     <string name="TextoSobreNostoros">

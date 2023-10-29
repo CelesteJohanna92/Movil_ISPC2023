@@ -16,6 +16,9 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".EditarReceta"
+            android:exported="false" />
+        <activity
             android:name=".SubirRecetas"
             android:exported="false" />
         <activity

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/color1"
+    tools:context=".EditarReceta">
+
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/itemsImagenReceta"
+            android:layout_gravity="center"
+            android:minWidth="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            />
+
+        <EditText
+            android:id="@+id/EditarNombreImagen"
+            android:hint="@string/EditarNombreImagen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="25sp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/títuloIngredientes"
+            android:text="@string/Ingrediente"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/EditarIngredientesReceta"
+            android:hint="@string/EditarIngredientesReceta"
+            android:textColor="#000"
+            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/títuloInstrucciones"
+            android:text="@string/Descripción"
+            android:textColor="#000"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/EditarInstruccionesReceta"
+            android:hint="@string/EditarInstruccionesReceta"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btnEdiActualizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="#6495ed"
+            android:text="Actualizar"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/letrauno"
+            />
+        <Button
+            android:id="@+id/btnEdiCancelar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="#131f30"
+            android:text="Eliminar"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/letrauno"
+            />
+
+
+
+
+
+</LinearLayout>

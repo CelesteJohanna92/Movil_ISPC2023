@@ -1,6 +1,7 @@
 package com.example.asd;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -78,6 +79,16 @@ public class RecetaAdapter extends RecyclerView.Adapter<RecetaAdapter.RecetaView
             nombreTextView = view.findViewById(R.id.itemTextImagen);
             ingredientesView = view.findViewById(R.id.itemIngredientesReceta);
             instruccionesView = view.findViewById(R.id.itemInstruccionesReceta);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Context context = itemView.getContext();
+                    Intent intent = new Intent(context, EditarReceta.class);
+                    intent.putExtra("ID", listaRecetas.get(getBindingAdapterPosition()).getId());
+                    context.startActivity(intent);
+                }
+            });
 
         }
     }

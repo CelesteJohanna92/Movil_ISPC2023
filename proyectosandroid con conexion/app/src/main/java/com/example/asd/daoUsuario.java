@@ -138,6 +138,38 @@ public class daoUsuario {
         sql.insert("receta", null, cv);
     }
 
+    public Receta getRecetaById(int id) {
+        Cursor cursor = sql.rawQuery("SELECT * FROM receta WHERE id=?", new String[]{String.valueOf(id)});
+        if (cursor != null && cursor.moveToFirst()) {
+            Receta receta = new Receta();
+            receta.setId(cursor.getInt(0));
+            receta.setIdCategoria(cursor.getInt(1));
+            receta.setIdUsuario(cursor.getInt(2));
+            receta.setNombre(cursor.getString(3));
+            receta.setIngredientes(cursor.getString(4));
+            receta.setInstrucciones(cursor.getString(5));
+            receta.setImagenURL(cursor.getString(6));
+            cursor.close();
+            return receta;
+        }
+        return null;
+    }
+
+
+    public boolean updateReceta(Receta receta) {
+        ContentValues cv = new ContentValues();
+        cv.put("imagen", receta.getImagenURL());
+        cv.put("nombre", receta.getNombre());
+        cv.put("ingredientes", receta.getIngredientes());
+        cv.put("instrucciones", receta.getInstrucciones());
+        return (sql.update("receta", cv, "id=" + receta.getId(), null) > 0);
+    }
+
+
+
+    public boolean deleteReceta(int id) {
+        return (sql.delete("receta", "id=?", new String[]{String.valueOf(id)}) > 0);
+    }
 
 
     public ArrayList<Receta> selectRecetas() {
@@ -190,6 +222,7 @@ public class daoUsuario {
 
         return categorias;
     }
+
 
     public ArrayList<Receta> selectRecetasSinAlcohol() {
         ArrayList<Receta> listaRecetasSinAlcohol = new ArrayList<>();
