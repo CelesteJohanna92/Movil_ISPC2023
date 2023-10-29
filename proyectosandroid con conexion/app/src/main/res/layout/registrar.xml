@@ -18,7 +18,7 @@
         android:text="CREAR NUEVA CUENTA"
         android:fontFamily="@font/letrauno"
         android:textColor="#000"
-        android:textSize="25dp"
+        android:textSize="30dp"
         android:textStyle="bold"/>
 
     <com.airbnb.lottie.LottieAnimationView
@@ -39,6 +39,7 @@
         android:layout_weight="1"
         android:hint="Usuario"
         android:inputType="textEmailAddress"
+        android:textSize="25sp"
         />
 
     <EditText
@@ -49,6 +50,7 @@
         android:layout_weight="1"
         android:hint="Nombre"
         android:inputType="textPersonName"
+        android:textSize="25sp"
         />
     <EditText
         android:id="@+id/RegApellido"
@@ -58,6 +60,7 @@
         android:layout_weight="1"
         android:hint="Apellidos"
         android:inputType="textPersonName"
+        android:textSize="25sp"
         />
     <EditText
         android:id="@+id/RegPass"
@@ -65,9 +68,9 @@
         android:layout_height="match_parent"
         android:layout_margin="10dp"
         android:layout_weight="1"
-        android:hint="Password"
+        android:hint="Contraseña"
         android:inputType="textPassword"
-
+        android:textSize="25sp"
         />
     <Button
         android:id="@+id/btnRegRegistrar"
