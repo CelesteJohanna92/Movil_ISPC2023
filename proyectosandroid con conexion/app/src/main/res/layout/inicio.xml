@@ -72,6 +72,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="0.2"
-        android:src="@mipmap/editperfil"/>
+        android:src="@drawable/editperfil"/>
 
 </LinearLayout>

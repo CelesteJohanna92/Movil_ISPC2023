@@ -35,17 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"/>
 
-        <!-- Nombre de la receta -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Nombre:"
-            android:textSize="18dp"
-            android:layout_gravity="left"
-            android:layout_marginLeft="-2dp"
-            android:paddingBottom="1dp"
-            android:layout_marginBottom="-18dp"
-            />
+
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -60,17 +50,7 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Ingredientes -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ingredientes:"
-            android:textSize="18dp"
-            android:layout_gravity="left"
-            android:paddingBottom="1dp"
-            android:layout_marginBottom="-18dp"
-            android:layout_marginLeft="-2dp"
-            />
+
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -86,17 +66,6 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Descripción -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Descripción:"
-            android:textSize="18dp"
-            android:layout_gravity="left"
-            android:paddingBottom="1dp"
-            android:layout_marginBottom="-18dp"
-            android:layout_marginLeft="-2dp"
-            />
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -120,6 +89,7 @@
             android:paddingBottom="1dp"
             android:layout_marginBottom="-18dp"
             android:layout_marginLeft="-2dp"
+            android:layout_margin="10dp"
             />
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -135,17 +105,7 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- URL de la imagen -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Link de la imagen:"
-            android:textSize="18dp"
-            android:layout_gravity="left"
-            android:paddingBottom="1dp"
-            android:layout_marginBottom="-18dp"
-            android:layout_marginLeft="-2dp"
-            />
+
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
