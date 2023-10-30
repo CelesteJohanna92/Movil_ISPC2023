@@ -1,5 +1,6 @@
 package com.example.asd;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,12 +12,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
 import com.example.asd.Fragmentos.Home;
 
 public class EditarReceta extends AppCompatActivity {
 
     EditText txtNombre, txtIngredientes, txtInstrucciones;
-    Button btnModificar, btnEliminar;
+    Button btnModificar, btnEliminar, btnCancelar;
 
     Receta receta;
     int id = 0;
@@ -29,6 +31,12 @@ public class EditarReceta extends AppCompatActivity {
         txtNombre = findViewById(R.id.EditarNombreImagen);
         txtIngredientes = findViewById(R.id.EditarIngredientesReceta);
         txtInstrucciones = findViewById(R.id.EditarInstruccionesReceta);
+
+        ActionBar actionBar = getSupportActionBar();
+        assert actionBar != null;
+        actionBar.setTitle("Editar Recetas");
+        actionBar.setDisplayShowHomeEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         if (savedInstanceState == null) {
             Bundle extras = getIntent().getExtras();
@@ -50,6 +58,7 @@ public class EditarReceta extends AppCompatActivity {
 
         btnModificar = findViewById(R.id.btnActualizarReceta);
         btnEliminar = findViewById(R.id.btnEliminarReceta);
+        btnCancelar = findViewById(R.id.btnCancelar);
 
         btnModificar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,6 +83,7 @@ public class EditarReceta extends AppCompatActivity {
                 } else {
                     Toast.makeText(EditarReceta.this, "Nombre e ingredientes son obligatorios", Toast.LENGTH_SHORT).show();
                 }
+
             }
         });
         btnEliminar.setOnClickListener(new View.OnClickListener() {
@@ -104,12 +114,22 @@ public class EditarReceta extends AppCompatActivity {
             }
         });
 
-    }
+        btnCancelar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed(); // Al hacer clic en "Cancelar", activamos la acción de retroceso
+            }
+        });
 
+
+    }
+    @Override
+    public void onBackPressed() {
+        // Esta es la acción de retroceso personalizada
+        super.onBackPressed(); // Esto volverá a la página anterior
+    }
     private void lista(){
         Intent intent = new Intent(this, Home.class);
         startActivity(intent);
     }
 }
-
-
