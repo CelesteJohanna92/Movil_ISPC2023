@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#fff"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/itemsImagenReceta"
+            android:layout_gravity="center"
+            android:minWidth="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="210dp"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/itemTextImagen"
+            android:text="@string/itemTextImagen"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:background="#131f30"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/títuloIngredientes"
+            android:text="@string/Ingrediente"
+            android:textColor="#000"
+            android:background="#7f8fa6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/itemIngredientesReceta"
+            android:text="@string/itenDescripcionReceta"
+            android:textColor="#000"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="18dp"
+            />
+        <TextView
+            android:id="@+id/títuloInstrucciones"
+            android:text="@string/Descripción"
+            android:textColor="#000"
+            android:background="#7f8fa6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/itemInstruccionesReceta"
+            android:text="@string/itemIngredientesReceta"
+            android:textColor="#000"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubirRecetas"
+    android:background="@color/color1">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarB"
+        android:background="#131f30"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        tools:ignore="MissingConstraints">
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="18dp">
+
+        <!-- Texto -->
+        <TextView
+            android:text="@string/SubirRecetas"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/NombreReceta"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:hint="@string/NombreReceta"
+                android:inputType="textCapWords|textAutoComplete" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/Ingrediente"
+                android:hint="@string/Ingrediente"
+                android:inputType="textCapWords|textAutoComplete"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="2dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/Descripcion"
+                android:hint="@string/Descripción"
+                android:inputType="textCapWords|textAutoComplete"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Categoría -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categoria:"
+            android:textSize="18dp"
+            android:layout_gravity="left"
+            android:paddingBottom="1dp"
+            android:layout_marginBottom="-18dp"
+            android:layout_marginLeft="-2dp"
+            android:layout_margin="10dp"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/spinnerCategoria"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:entries="@array/opciones_categoria"
+                android:prompt="@string/selecciona_categoria" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/ImagenURL"
+                android:hint="Link de la imagen"
+                android:inputType="textCapWords"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Botón -->
+        <Button
+            android:id="@+id/SubirRecetas"
+            android:text="@string/AGREGAR"
+            android:background="@drawable/btn_personalizado_dos"
+            android:textColor="#ffffff"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:textSize="25dp"
+
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

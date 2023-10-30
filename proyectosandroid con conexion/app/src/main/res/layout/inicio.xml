@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/color1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btnEditar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="Editar"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:radius="10dp"
+            android:textSize="20dp"
+            android:background="@drawable/btn_personalizado_dos"
+           />
+        <Button
+            android:radius="10dp"
+            android:id="@+id/btnEliminar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="Eliminar"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:background="@drawable/btn_personalizado_dos"
+
+            />
+
+        <Button
+            android:id="@+id/btnSalir"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="Salir"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:background="@drawable/btn_personalizado_dos"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nombreUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:text="Hola! Usuario."
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:src="@drawable/editperfil"/>
+
+</LinearLayout>

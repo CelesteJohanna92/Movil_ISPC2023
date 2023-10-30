@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color1"
+    tools:context=".EditarReceta">
+
+        <TextView
+            android:id="@+id/EditarReceta"
+            android:text="EDITAR RECETA"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/EditarNombreImagen"
+            android:hint="@string/EditarNombreImagen"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="25sp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/títuloIngredientes"
+            android:text="@string/Ingrediente"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+
+        <EditText
+            android:id="@+id/EditarIngredientesReceta"
+            android:hint="@string/EditarIngredientesReceta"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/títuloInstrucciones"
+            android:text="@string/Descripción"
+            android:textColor="#000"
+
+            android:textSize="20dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/EditarInstruccionesReceta"
+            android:hint="@string/EditarInstruccionesReceta"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btnActualizarReceta"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_personalizado_tres"
+            android:text="Actualizar"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            />
+
+
+        <Button
+            android:id="@+id/btnEliminarReceta"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="20dp"
+
+            android:layout_weight="1"
+            android:background="@drawable/btn_personalizado_dos"
+            android:text="Eliminar"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+
+            />
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text="Cancelar"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:background="@drawable/btn_personalizado_dos"
+            />
+
+
+</LinearLayout>

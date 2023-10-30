@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">Coctelis</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="desarrollador"> Desarrollado por: OptimusWeb</string>
+
+    <string name="Home">Home</string>
+    <string name="Categorias">Categorías</string>
+    <string name="Subir_Receta">Subir recetas</string>
+    <string name="Perfil">Perfil</string>
+    <string name="Sobre_nosotros">Sobre nosotros</string>
+    <string name="Contacto">Contacto</string>
+    <string name="Cerrar_sesion">Cerrar sesión</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="Daiquiri">Daiquirí</string>
+    <string name="Pina">Piña Colada</string>
+    <string name="Margarita">Margarita</string>
+
+    <!--PERFIL-->
+    <string name="PERFILTXT">MI PERFIL</string>
+    <string name="MIINFORMACIONTXT">MI INFORMACIÓN</string>
+    <string name="UIDPERFILTXT">Uid:</string>
+    <string name="UIDPERFIL"> -- </string>
+    <string name="NOMBRESPERFILTXT">Nombre: </string>
+    <string name="NOMBRESPERFIl"> -- </string>
+    <string name="APELLIDOSPERFILTXT">Apellido: </string>
+    <string name="APELLIDOSPERFIl"> -- </string>
+    <string name="CORREOPERFILTXT">Correo: </string>
+    <string name="CORREOPERFIl"> -- </string>
+    <string name="CONTRASENAPERFILTXT">Contraseña: </string>
+    <string name="CONTRASENAPERFIL"> -- </string>
+    <string name="ACTUALIZARCONTRASENA">ACTUALIZAR CONTRASEÑA</string>
+    <string name="ACTUALIZARDATOS">ACTUALIZAR DATOS</string>
+
+    <!--login_registro-->
+    <string name="Acceder">Acceder</string>
+    <string name="Registrarse">Registrarse</string>
+
+    <!--inicio_sesion-->
+    <string name="Login">Inicio de Sesión</string>
+    <string name="Ingresar">Ingresar</string>
+    <string name="Correo">Correo</string>
+    <string name="Contrasena">Contraseña</string>
+    <string name="Atras">Atrás</string>
+
+    <!--contacto-->
+    <string name="Instagram">Instagram: @Coctelis</string>
+    <string name="Facebook"> Facebook: Coctelis</string>
+    <string name="Email">Email: coctelis@gmail.com</string>
+
+    <!--registro-->
+
+    <string name="RegistroTXT">Registro</string>
+    <string name="CorreoR">Correo electrónico</string>
+    <string name="Password">Correo electronico</string>
+    <string name="Nombre">Nombre</string>
+    <string name="Apellido">Apellido</string>
+    <string name="Registrar">Registrar</string>
+
+    <!--Categorías-->
+
+    <string name="CoctelCA">Coc con</string>
+    <string name="ColctelSA">Coc sin</string>
+    <string name="Coctelca">Con Alcohol</string>
+    <string name="Colctelsa">Sin Alcohol</string>
+
+    <!--spinner-->
+    <string-array name="opciones_categoria">
+        <item>Cócteles con alcohol</item>
+        <item>Cócteles sin alcohol</item>
+    </string-array>
+
+    <string name="selecciona_categoria">Selecciona una categoría</string>
+
+    <!--Subir_Receta-->
+
+    <!--Subir_Receta-->
+
+    <string name="SubirRecetas">Subir Receta</string>
+    <string name="AGREGAR">AGREGAR</string>
+    <string name="NombreReceta">Nombre</string>
+    <string name="Ingrediente">Ingredientes</string>
+    <string name="Descripción">Descripción</string>
+    <string name="Categoria">Categoria</string>
+    <string name="Imagen">Imagen</string>
+
+    <!--Menu agregar-->
+    <string name="Agregar">Agregar</string>
+    <string name="Vista">Vista</string>
+
+    <!--Items Receta sin alcohol-->
+
+    <string name="itemsImagenSinAlcohol">--</string>
+    <string name="itemNombreSinAlcohol">--</string>
+    <string name="itemDescripcionSinAlcohol">--</string>
+
+
+    <!--Items Receta con alcohol-->
+
+    <string name="itemsImagenReceta">--</string>
+    <string name="itemTextImagen">--</string>
+    <string name="itenDescripcionReceta">--</string>
+    <string name="itemIngredientesReceta">--</string>
+
+    <!--Con Alcohol-->
+    <string name="NombreConAlcohol">Nombre de receta</string>
+    <string name="EscribaAquiConAlcohol">Escriba nombre aqui</string>
+    <string name="VistaConAlcohol">0</string>
+    <string name="PublicarConAlchol">Publicar</string>
+
+
+    <!--Editar receta-->
+    <string name="EditarNombreImagen">Nombre de la receta</string>
+    <string name="EditarIngredientesReceta">Ingredientes </string>
+    <string name="EditarInstruccionesReceta">Instrucciones</string>
+
+    <!---Sobre nosotros-->
+    <string name="OptimusWeb">OptimusWeb</string>
+    <string name="TextoSobreNostoros">
+    <![CDATA[
+    Somos una empreesa de desarrollo de software.\n\n
+    Nuestro equipo de trabajo se encuentra en constante actualización y formación para brindar un servicio de calidad a nuestros clientes.\n\n
+
+    Nuestro objetivo es mantener una relación activa con el cliente y que se extienda a través de los años. De nuestra parte nos comprometemos a realizar nuestro trabajo con compromiso y dedicación para que estén satisfechos con el servicio contratado.\n\n
+
+    Creamos soluciones de software que se adaptan a las necesidades de cada cliente, acompañándolos a llevar adelante la revolución digital que hoy nos moviliza. Brindamos soporte técnico especializado para garantizar que la actividad nunca se detenga.\n\n
+
+    Nuestro equipo trabaja en relación conjunta con cada cliente, asegurando el éxito de los proyectos. La cercanía con el cliente es nuestro valor diferencial en el mercado del software.
+    ]]>
+    </string>
+
+    <string name="EDITAR">EDITAR</string>
+
+</resources>
